@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/chart.unity
     guid: 010f23a2f4e6b0e4c92598e3cc06ddd0
+  - enabled: 1
+    path: Assets/hololnes.unity
+    guid: 050c579b55f54f940adbde47a0d3a164
   m_configObjects: {}

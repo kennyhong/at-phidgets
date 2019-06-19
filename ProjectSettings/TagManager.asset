@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Threshold
+  - Crate
+  - UpperBackground
+  - LowerBackground
+  - TargetCheck
+  - UI
+  - Widget
+  - Window
   layers:
   - Default
   - TransparentFX
@@ -13,6 +22,10 @@ TagManager:
   - UI
   - 
   - 
+  - Otherside
+  - Threshold
+  - Crate
+  - Target
   - 
   - 
   - 
@@ -32,12 +45,20 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Spatial Awareness
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2569932785
+    locked: 0
+  - name: Midground
+    uniqueID: 4018137863
+    locked: 0
+  - name: Foreground
+    uniqueID: 949359749
+    locked: 0
+  - name: Mask
+    uniqueID: 439067023
     locked: 0

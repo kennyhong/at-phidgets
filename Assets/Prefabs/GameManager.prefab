@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6698445105388024403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6698445105388024401}
+  - component: {fileID: 6698445105388024400}
+  - component: {fileID: 6698445105388024430}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6698445105388024401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698445105388024403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8284461, y: 0.002776131, z: -0.03756099}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6698445105388024400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698445105388024403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d4a855d6c6e624593510101dc20967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  participantId: 0
+  trialNumber: 0
+  totalTargets: 0
+  trialOver: 0
+  scrollSpeed: -5
+  overshotCount: 0
+  undershotCount: 0
+  gamemode: 0
+  score: 0
+  missedTargets: 0
+  missedJumps: 0
+  menuOn: 1
+  sensorValue: 0
+  OvershotText: {fileID: 0}
+  UndershotText: {fileID: 0}
+  ScoreText: {fileID: 0}
+  MissedJumpsText: {fileID: 0}
+  MissedTargetsText: {fileID: 0}
+  startTrial: {fileID: 0}
+  debugMode: {fileID: 0}
+  GamePanel: {fileID: 0}
+  TrialMode: {fileID: 0}
+  CurrentTrial: {fileID: 0}
+  ip: 
+  port: 8888
+  phidgetPassword: 
+  phidgetServerName: 
+--- !u!114 &6698445105388024430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698445105388024403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c114d396be85ace428066cb225016b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPoolSize: 5
+  boxPrefab: {fileID: 3906764839039660056, guid: 4588c428fceed11498acd88a7dfc15c3,
+    type: 3}
+  spawnRate: 3
