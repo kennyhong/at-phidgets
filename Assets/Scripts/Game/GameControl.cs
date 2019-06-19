@@ -1,4 +1,6 @@
-﻿using TMPro;
+﻿
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,6 +10,7 @@ public class GameControl : MonoBehaviour
     public static GameControl instance;
     //public Logger logger;
     //public GameObject trialCompletedText;
+    public const float SIGNAL_TIME = 3f;
     public int participantId;
     public int trialNumber = 1;
     public int totalTargets = 0;
@@ -22,8 +25,14 @@ public class GameControl : MonoBehaviour
     public bool menuOn = true;
     public System.Diagnostics.Stopwatch stopwatch;
     public float sensorValue = 0f;
-    private float trialCooldownTime = 300f;
+    private float trialCooldownTime = 60f;
     public bool trialCooldown = true;
+    private IEnumerator signalCoroutine;
+    public float playDelayCount = 0f;
+    private float playDelay = 3f;
+    public bool delayStart = false;
+    public float delayStartTimer = 0f;
+    private float delayStartTotal = 0.35f;
 
     // Score Board
     public TextMeshPro OvershotText;
@@ -33,13 +42,26 @@ public class GameControl : MonoBehaviour
     public TextMeshPro MissedTargetsText;
 
     //Game Panel
-    public Button startTrial;
-    public Button debugMode;
     public GameObject GamePanel;
     public TextMeshPro TrialMode;
     public TextMeshPro CurrentTrial;
     public TextMeshPro ServerIP;
     public TextMeshPro StartCooldownTimer;
+
+    //Audio Clip
+    public AudioSource AudioScoreSource;
+    public AudioSource AudioSignalSource;
+    public AudioSource AudioFoxSource;
+    public AudioClip TrialReadySound;
+    public AudioClip TrialCompletedSound;
+    public AudioClip ScoreSound;
+    public AudioClip TargetHitSound;
+    public AudioClip JumpSound;
+    public AudioClip JumpSignalSound;
+    public AudioClip MissedTargetSound;
+    public AudioClip OvershotSound;
+    public AudioClip UndershotSound;
+    public AudioClip MissedJumpSound;
 
 
     //Server
@@ -69,7 +91,7 @@ public class GameControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        signalCoroutine = SignalJump();
         //logger = new Logger();
     }
 
@@ -114,6 +136,7 @@ public class GameControl : MonoBehaviour
         GamePanel.SetActive(false);
         trialOver = false;
         stopwatch = new System.Diagnostics.Stopwatch();
+        StartCoroutine(signalCoroutine);
     }
 
     // Update is called once per frame
@@ -132,8 +155,9 @@ public class GameControl : MonoBehaviour
         } else if (trialCooldownTime == 0f && trialCooldown)
         {
             trialCooldown = false;
-            trialCooldownTime = 300f;
+            trialCooldownTime = 60f;
             StartCooldownTimer.text = "Cooldown Timer: Ready";
+            PlaySignalAudio(TrialReadySound);
         }
         
         if (trialOver == true && menuOn == false)
@@ -148,6 +172,41 @@ public class GameControl : MonoBehaviour
         {
             StartTrial();
         }
+        if(!trialOver && delayStart)
+        {
+            if(playDelayCount >= playDelay)
+            {
+                PlaySignalAudio(JumpSignalSound);
+                playDelayCount = 0f;
+            }
+            playDelayCount += Time.deltaTime;
+        }
+        if(!delayStart && delayStartTimer >= delayStartTotal && !trialOver)
+        {
+            delayStart = true;
+        }
+        if(!delayStart && !trialOver)
+        {
+            delayStartTimer += Time.deltaTime;
+        }
+    }
+
+    public void PlayScoreAudio(AudioClip clip)
+    {
+        AudioScoreSource.clip = clip;
+        AudioScoreSource.Play();
+    }
+
+    public void PlaySignalAudio(AudioClip clip)
+    {
+        AudioSignalSource.clip = clip;
+        AudioSignalSource.Play();
+    }
+
+    public void PlayFoxAudio(AudioClip clip)
+    {
+        AudioFoxSource.clip = clip;
+        AudioFoxSource.Play();
     }
 
     private void ReloadScene()
@@ -205,5 +264,14 @@ public class GameControl : MonoBehaviour
     {
         //trialCompletedText.SetActive(true);
         trialOver = true;
+    }
+
+    private IEnumerator SignalJump()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(SIGNAL_TIME);
+                
+        }
     }
 }

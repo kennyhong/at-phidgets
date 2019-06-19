@@ -11,7 +11,7 @@ public class TargetPool : MonoBehaviour
     public float spawnRate = 3f;
 
     private Vector3 objectPoolPosition = new Vector3(-15f, -1000f, 40f);
-    private float timeSinceLastSpawned;
+    private float timeSinceLastSpawned = 0;
     private float spawnXposition = 1f;
     private float spawnYposition = -0.1f;
     private float spawnZposition = 4f;
@@ -44,18 +44,26 @@ public class TargetPool : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeSinceLastSpawned += Time.deltaTime;
+        if(GameControl.instance.trialOver == false)
+        {
+            timeSinceLastSpawned += Time.deltaTime;
+        }
         if (GameControl.instance.totalTargets == 20 && Fox.instance.onGround && GameControl.instance.gamemode != GameMode.Debug)
         {
             GameControl.instance.trialOver = true;
             GameControl.instance.trialCooldown = true;
             GameControl.instance.totalTargets = 0;
+            GameControl.instance.StopAllCoroutines();
+            GameControl.instance.playDelayCount = 0;
+            GameControl.instance.delayStartTimer = 0;
+            GameControl.instance.delayStart = false;
+            GameControl.instance.PlaySignalAudio(GameControl.instance.TrialCompletedSound);
             ResetBoxes();
             firstBox = true;
             
         }
 
-        if (GameControl.instance.trialOver == false && timeSinceLastSpawned >= spawnRate)
+            if (GameControl.instance.trialOver == false && timeSinceLastSpawned >= spawnRate)
         {
             
             timeSinceLastSpawned = 0f;
@@ -63,6 +71,7 @@ public class TargetPool : MonoBehaviour
             {
                 if (!targetBoxes[currentBox - 1].GetComponent<TargetBox>().targetHit)
                 {
+                    GameControl.instance.PlayScoreAudio(GameControl.instance.MissedTargetSound);
                     GameControl.instance.missedTargets++;
                     GameControl.instance.totalTargets++;
                 }  else
@@ -74,6 +83,7 @@ public class TargetPool : MonoBehaviour
             {
                 if (!targetBoxes[boxPoolSize - 1].GetComponent<TargetBox>().targetHit)
                 {
+                    GameControl.instance.PlayScoreAudio(GameControl.instance.MissedTargetSound);
                     GameControl.instance.missedTargets++;
                     GameControl.instance.totalTargets++;
                 } else

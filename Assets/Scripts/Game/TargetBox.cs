@@ -33,6 +33,7 @@ public class TargetBox : MonoBehaviour
         if (collision.gameObject.tag != "Threshold" && collision.gameObject.tag != "UpperBackground" && collision.gameObject.tag != "LowerBackground")
         {
             velocity = new Vector3(0, Fox.instance.sensorValue/7840f, 4);
+            GameControl.instance.PlaySignalAudio(GameControl.instance.TargetHitSound);
             start = rb2d.position;
             lerp = true;
             Fox.instance.hasCollided = true;
@@ -41,17 +42,20 @@ public class TargetBox : MonoBehaviour
         else if (collision.gameObject.tag == "UpperBackground" && !scoreCounted)
         {
             scoreCounted = true;
+            GameControl.instance.PlayScoreAudio(GameControl.instance.OvershotSound);
             GameControl.instance.overshotCount++;
             GameControl.instance.totalTargets++;
         }
         else if (collision.gameObject.tag == "Threshold" && !scoreCounted)
         {
+            GameControl.instance.PlayScoreAudio(GameControl.instance.ScoreSound);
             scoreCounted = true;
             GameControl.instance.score++;
             GameControl.instance.totalTargets++;
         }
           else if (collision.gameObject.tag == "LowerBackground" && !scoreCounted)
         {
+            GameControl.instance.PlayScoreAudio(GameControl.instance.UndershotSound);
             scoreCounted = true;
             GameControl.instance.undershotCount++;
             GameControl.instance.totalTargets++;

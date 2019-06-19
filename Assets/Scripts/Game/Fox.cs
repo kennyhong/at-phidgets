@@ -45,6 +45,7 @@ public class Fox : MonoBehaviour
             onGround = true;
             if (!hasCollided && !firstJump && !repeatedBackground)
             {
+                GameControl.instance.PlaySignalAudio(GameControl.instance.MissedJumpSound);
                 GameControl.instance.missedJumps++;
                 repeatedBackground = true;
             }
@@ -103,7 +104,8 @@ public class Fox : MonoBehaviour
                 if (sensorValue > 4200f)
                 {
                     sensorValue = 4200f;
-                } 
+                }
+                GameControl.instance.PlayFoxAudio(GameControl.instance.JumpSound);
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(0, upforce));
                 anim.SetTrigger("Jump");
