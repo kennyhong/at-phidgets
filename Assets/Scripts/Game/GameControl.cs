@@ -8,11 +8,11 @@ using UnityEngine.UI;
 public class GameControl : MonoBehaviour
 {
     public static GameControl instance;
-    //public Logger logger;
+    public Logger logger;
     //public GameObject trialCompletedText;
     public const float SIGNAL_TIME = 3f;
     public int participantId;
-    public int trialNumber = 1;
+    public int trialNumber;
     public int totalTargets = 0;
     public bool trialOver = true;
     public float scrollSpeed = -1.5f;
@@ -33,6 +33,8 @@ public class GameControl : MonoBehaviour
     public bool delayStart = false;
     public float delayStartTimer = 0f;
     private float delayStartTotal = 0.35f;
+    private bool studyComplete = false;
+    public GameObject VisualBlock;
 
     // Score Board
     public TextMeshPro OvershotText;
@@ -41,12 +43,28 @@ public class GameControl : MonoBehaviour
     public TextMeshPro MissedJumpsText;
     public TextMeshPro MissedTargetsText;
 
+    public TextMeshPro BlockOvershotText;
+    public TextMeshPro BlockUndershotText;
+    public TextMeshPro BlockScoreText;
+    public TextMeshPro BlockMissedJumpsText;
+    public TextMeshPro BlockMissedTargetsText;
+
     //Game Panel
     public GameObject GamePanel;
     public TextMeshPro TrialMode;
     public TextMeshPro CurrentTrial;
     public TextMeshPro ServerIP;
     public TextMeshPro StartCooldownTimer;
+    public TextMeshPro Instructions;
+    public TextMeshPro NumberTargets;
+    public TextMeshPro StudyCompletedText;
+
+    public TextMeshPro SummaryTitle;
+    public TextMeshPro ScoreSummary;
+    public TextMeshPro OvershotSummary;
+    public TextMeshPro UndershotSummary;
+    public TextMeshPro MissedTargetsSummary;
+    public TextMeshPro MissedJumpsSummary;
 
     //Audio Clip
     public AudioSource AudioScoreSource;
@@ -76,6 +94,7 @@ public class GameControl : MonoBehaviour
         Debug.Log($"UDP server address: {ip}");
         Debug.Log($"UDP server port: {port}");
 
+        stopwatch = new System.Diagnostics.Stopwatch();
         //// Create a new TCP chat client
         client = new Client(ip, port);
 
@@ -92,51 +111,54 @@ public class GameControl : MonoBehaviour
             Destroy(gameObject);
         }
         signalCoroutine = SignalJump();
-        //logger = new Logger();
+        logger = new Logger();
     }
 
     void Start()                                
     {
         trialOver = true;
-
+        trialNumber = 1;
         TrialMode.text = "Mode: " + gamemode.ToString();
-        CurrentTrial.text = "Current Trial: " + trialNumber + " / 5";
+        CurrentTrial.text = "Current Trial: " + trialNumber + " / 20";
     }
 
     void StartTrial()
     {
-        switch(gamemode)
+        switch (gamemode)
         {
             case GameMode.Visual:
-                startPhidgetTrial();
+                GamePanel.SetActive(false);
+                AudioScoreSource.mute = true;
+                AudioFoxSource.mute = true;
+                AudioSignalSource.mute = true;
+                trialOver = false;
+                stopwatch.Start();
+                StartCoroutine(signalCoroutine);
                 menuOn = false;
                 break;
             case GameMode.Audio:
+                GamePanel.SetActive(false);
+                VisualBlock.SetActive(true);
+                trialOver = false;
+                stopwatch.Start();
+                StartCoroutine(signalCoroutine);
                 menuOn = false;
                 break;
             case GameMode.VisualAudio:
+                GamePanel.SetActive(false);
+                trialOver = false;
+                stopwatch.Start();
+                StartCoroutine(signalCoroutine);
                 menuOn = false;
                 break;
             case GameMode.VATransitive:
+                GamePanel.SetActive(false);
+                trialOver = false;
+                stopwatch.Start();
+                StartCoroutine(signalCoroutine);
                 menuOn = false;
                 break;
         }
-    }
-
-    void StartDebug()
-    {
-        gamemode = GameMode.Debug;
-        menuOn = false;
-        GamePanel.SetActive(false);
-        trialOver = false;
-    }
-
-    void startPhidgetTrial()
-    {
-        GamePanel.SetActive(false);
-        trialOver = false;
-        stopwatch = new System.Diagnostics.Stopwatch();
-        StartCoroutine(signalCoroutine);
     }
 
     // Update is called once per frame
@@ -147,6 +169,13 @@ public class GameControl : MonoBehaviour
         OvershotText.text = "Overshot: " + overshotCount;
         MissedJumpsText.text = "Missed Jumps: " + missedJumps;
         MissedTargetsText.text = "Missed Targets: " + missedTargets;
+
+        BlockUndershotText.text = "Undershot: " + undershotCount;
+        BlockScoreText.text = "Score: " + score;
+        BlockOvershotText.text = "Overshot: " + overshotCount;
+        BlockMissedJumpsText.text = "Missed Jumps: " + missedJumps;
+        BlockMissedTargetsText.text = "Missed Targets: " + missedTargets;
+
         client.Send("ping");
         if(trialCooldown && trialCooldownTime > 0f)
         {
@@ -162,13 +191,15 @@ public class GameControl : MonoBehaviour
         
         if (trialOver == true && menuOn == false)
         {
-            SetNextTrial();
+            if(trialNumber < 1)
+            {
+                SetNextTrial();
+            } else
+            {
+                StudyComplete();
+            }
         }
-        if(gamemode == GameMode.Debug && Input.GetKeyDown(KeyCode.Escape))
-        {
-            ReloadScene();
-        }
-        if (sensorValue * 1000f > 900f && trialOver && !trialCooldown)
+        if (sensorValue * 1000f > 900f && trialOver && !trialCooldown && !studyComplete)
         {
             StartTrial();
         }
@@ -224,6 +255,13 @@ public class GameControl : MonoBehaviour
     private void SetNextTrial()
     {
         menuOn = true;
+
+        UndershotSummary.text = "Undershot: " + undershotCount;
+        ScoreSummary.text = "Score: " + score;
+        OvershotSummary.text = "Overshot: " + overshotCount;
+        MissedJumpsSummary.text = "Missed Jumps: " + missedJumps;
+        MissedTargetsSummary.text = "Missed Targets: " + missedTargets;
+
         undershotCount = 0;
         score = 0;
         overshotCount = 0;
@@ -232,11 +270,13 @@ public class GameControl : MonoBehaviour
 
         trialNumber++;
 
-        // TODO: set game mode to next;
-
         TrialMode.text = "Mode: " + gamemode.ToString();
-        CurrentTrial.text = "Current Trial: " + trialNumber + " / 5";
+        CurrentTrial.text = "Current Trial: " + trialNumber + " / 20";
         GamePanel.SetActive(true);
+        if(gamemode == GameMode.Audio)
+        {
+            VisualBlock.SetActive(false);
+        }
         
     }
 
@@ -257,13 +297,27 @@ public class GameControl : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        StopClient();
+
     }
 
-    public void trialComplete()
+    public void StudyComplete()
     {
-        //trialCompletedText.SetActive(true);
-        trialOver = true;
+        if(!studyComplete)
+        {
+            trialOver = true;
+            StopClient();
+            VisualBlock.SetActive(false);
+            TrialMode.gameObject.SetActive(false);
+            ServerIP.gameObject.SetActive(false);
+            CurrentTrial.gameObject.SetActive(false);
+            StartCooldownTimer.gameObject.SetActive(false);
+            Instructions.gameObject.SetActive(false);
+            NumberTargets.gameObject.SetActive(false);
+            StudyCompletedText.gameObject.SetActive(true);
+            GamePanel.SetActive(true);
+            logger.writeToCSV();
+            studyComplete = true;
+        }
     }
 
     private IEnumerator SignalJump()

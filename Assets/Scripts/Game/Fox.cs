@@ -48,6 +48,14 @@ public class Fox : MonoBehaviour
                 GameControl.instance.PlaySignalAudio(GameControl.instance.MissedJumpSound);
                 GameControl.instance.missedJumps++;
                 repeatedBackground = true;
+                DataEntry entry = new DataEntry(
+                        GameControl.instance.stopwatch.ElapsedMilliseconds,
+                        GameControl.instance.totalTargets,
+                        GameControl.instance.sensorValue,
+                        LogType.MISSED_JUMP
+
+                    );
+                GameControl.instance.logger.addEntry(entry);
             }
         }
         if (firstJump)
@@ -77,9 +85,9 @@ public class Fox : MonoBehaviour
         {
             anim.SetTrigger("Run");
         }
-        if (GameControl.instance.gamemode == GameMode.Visual && onGround == true && !GameControl.instance.trialOver)
+        if (GameControl.instance.gamemode == GameMode.Visual || GameControl.instance.gamemode == GameMode.Audio && onGround == true && !GameControl.instance.trialOver)
         {
-            if((GameControl.instance.sensorValue * 1000f) > 500f && !jumpCooldownStatus)
+            if ((GameControl.instance.sensorValue * 1000f) > 500f && !jumpCooldownStatus)
             {
                 sensorValue = ((float)GameControl.instance.sensorValue * 1000f);
                 if (sensorValue > 4200f)
@@ -96,41 +104,5 @@ public class Fox : MonoBehaviour
                 GameControl.instance.sensorValue = 0f;
             }
         }
-        if (GameControl.instance.gamemode == GameMode.Audio && onGround == true && !GameControl.instance.trialOver)
-        {
-            if ((GameControl.instance.sensorValue * 1000f) > 500f)
-            {
-                sensorValue = ((float)GameControl.instance.sensorValue * 1000f);
-                if (sensorValue > 4200f)
-                {
-                    sensorValue = 4200f;
-                }
-                GameControl.instance.PlayFoxAudio(GameControl.instance.JumpSound);
-                rb2d.velocity = Vector2.zero;
-                rb2d.AddForce(new Vector2(0, upforce));
-                anim.SetTrigger("Jump");
-                onGround = false;
-                repeatedBackground = false;
-                hasCollided = false;
-            }
-        }
-        if (GameControl.instance.gamemode == GameMode.Debug && onGround == true && Input.GetKeyDown(KeyCode.Space))
-        {
-            sensorValue = 2520f;
-            //sensorValue = Random.Range(1700f, 1921f);
-
-            if (sensorValue > 4700f)
-            {
-                sensorValue = 4700f;
-            }
-
-            rb2d.velocity = Vector2.zero;
-            rb2d.AddForce(new Vector2(0, upforce));
-            anim.SetTrigger("Jump");
-            onGround = false;
-            repeatedBackground = false;
-            hasCollided = false;
-        }
-        
     }
 }

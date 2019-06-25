@@ -551,7 +551,7 @@ PlayerSettings:
       CodeGeneration: False
       Contacts: False
       EnterpriseAuthentication: False
-      HumanInterfaceDevice: False
+      HumanInterfaceDevice: True
       InputInjectionBrokered: False
       InternetClient: True
       InternetClientServer: True
@@ -560,7 +560,7 @@ PlayerSettings:
       Microphone: True
       MusicLibrary: False
       Objects3D: False
-      OfflineMapsManagement: False
+      OfflineMapsManagement: True
       PhoneCall: False
       PhoneCallHistoryPublic: False
       PicturesLibrary: False
@@ -569,13 +569,13 @@ PlayerSettings:
       Proximity: False
       RecordedCallsFolder: False
       RemoteSystem: True
-      RemovableStorage: False
+      RemovableStorage: True
       SharedUserCertificates: False
-      SpatialPerception: False
-      SystemManagement: False
-      UserAccountInformation: False
-      UserDataTasks: False
-      UserNotificationListener: False
+      SpatialPerception: True
+      SystemManagement: True
+      UserAccountInformation: True
+      UserDataTasks: True
+      UserNotificationListener: True
       VideosLibrary: False
       VoipCall: False
       WebCam: True

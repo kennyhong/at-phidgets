@@ -45,6 +45,13 @@ public class TargetBox : MonoBehaviour
             GameControl.instance.PlayScoreAudio(GameControl.instance.OvershotSound);
             GameControl.instance.overshotCount++;
             GameControl.instance.totalTargets++;
+            DataEntry entry = new DataEntry(
+                        GameControl.instance.stopwatch.ElapsedMilliseconds,
+                        GameControl.instance.totalTargets,
+                        GameControl.instance.sensorValue,
+                        LogType.OVERSHOT
+                    );
+            GameControl.instance.logger.addEntry(entry);
         }
         else if (collision.gameObject.tag == "Threshold" && !scoreCounted)
         {
@@ -52,6 +59,13 @@ public class TargetBox : MonoBehaviour
             scoreCounted = true;
             GameControl.instance.score++;
             GameControl.instance.totalTargets++;
+            DataEntry entry = new DataEntry(
+            GameControl.instance.stopwatch.ElapsedMilliseconds,
+            GameControl.instance.totalTargets,
+            GameControl.instance.sensorValue,
+            LogType.SCORE
+        );
+            GameControl.instance.logger.addEntry(entry);
         }
           else if (collision.gameObject.tag == "LowerBackground" && !scoreCounted)
         {
@@ -59,6 +73,13 @@ public class TargetBox : MonoBehaviour
             scoreCounted = true;
             GameControl.instance.undershotCount++;
             GameControl.instance.totalTargets++;
+            DataEntry entry = new DataEntry(
+            GameControl.instance.stopwatch.ElapsedMilliseconds,
+            GameControl.instance.totalTargets,
+            GameControl.instance.sensorValue,
+            LogType.UNDERSHOT
+        );
+            GameControl.instance.logger.addEntry(entry);
         }
 
     }
@@ -68,7 +89,6 @@ public class TargetBox : MonoBehaviour
     {
         if(lerp)
         {
-            Debug.Log(Time.deltaTime);
             currentLerpTime += Time.fixedDeltaTime;
             if (currentLerpTime > lerpTime)
             {

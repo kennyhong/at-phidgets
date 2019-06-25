@@ -259,6 +259,7 @@
     <Compile Include="Assets\Scripts\Core\DataEntryMap.cs" />
     <Compile Include="Assets\Scripts\Core\ListDictionary.cs" />
     <Compile Include="Assets\Scripts\Core\Logger.cs" />
+    <Compile Include="Assets\Scripts\Core\LogType.cs" />
     <Compile Include="Assets\Scripts\Game\Fox.cs" />
     <Compile Include="Assets\Scripts\Game\GameControl.cs" />
     <Compile Include="Assets\Scripts\Game\GameMode.cs" />

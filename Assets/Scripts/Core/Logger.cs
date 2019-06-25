@@ -8,21 +8,16 @@ public class Logger
 {
     private List<DataEntry> records;
     private StreamWriter writer;
-    private CsvWriter csv;
-
 
     public Logger()
     {
         records = new List<DataEntry>();
         var logPath = Application.persistentDataPath + "/logs/";
-
         if (!Directory.Exists(logPath))
         {
             Directory.CreateDirectory(logPath);
         }
-        writer = new StreamWriter(logPath + "participant.csv");
-        csv = new CsvWriter(writer);
-        csv.Configuration.RegisterClassMap<DataEntryMap>();
+        writer = new StreamWriter(Application.persistentDataPath + "/logs/" + "participant" + GameControl.instance.participantId + ".csv", append: true);
     }
 
     public void addEntry(DataEntry entry)
@@ -32,6 +27,10 @@ public class Logger
 
     public void writeToCSV()
     {
-        csv.WriteRecords(records);
+        using (var csv = new CsvWriter(writer))
+        {
+            //csv.Configuration.RegisterClassMap<DataEntryMap>();
+            csv.WriteRecords(records);
+        }
     }
 }

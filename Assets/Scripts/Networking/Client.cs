@@ -39,9 +39,7 @@ public class Client : NetCoreServer.UdpClient
 
     protected override void OnReceived(EndPoint endpoint, byte[] buffer, long offset, long size)
     {
-        Debug.Log("Here");
         string incoming = Encoding.UTF8.GetString(buffer, (int)offset, (int)size);
-        Debug.Log("Data Recieved: " + incoming);
         GameControl.instance.sensorValue = float.Parse(incoming);
         GameControl.instance.ServerIP.text = "Sensor Value: " + incoming;
         ReceiveAsync();

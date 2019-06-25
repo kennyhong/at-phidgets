@@ -17,5 +17,6 @@ public class DataEntryMap : ClassMap<DataEntry>
         Map(m => m.overshots).Index(7).Name("overshots");
         Map(m => m.undershots).Index(8).Name("undershots");
         Map(m => m.sensorValue).Index(9).Name("sensorValue");
+        Map(m => m.logtype).Index(10).Name("logType");
     }
 }

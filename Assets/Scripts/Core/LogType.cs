@@ -1,0 +1,4 @@
+﻿public enum LogType
+{
+    MISSED_TARGET, SCORE, OVERSHOT, UNDERSHOT, MISSED_JUMP
+}
