@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using CsvHelper;
@@ -7,7 +8,6 @@ using UnityEngine;
 public class Logger
 {
     private List<DataEntry> records;
-    private StreamWriter writer;
 
     public Logger()
     {
@@ -17,7 +17,10 @@ public class Logger
         {
             Directory.CreateDirectory(logPath);
         }
-        writer = new StreamWriter(Application.persistentDataPath + "/logs/" + "participant" + GameControl.instance.participantId + ".csv", append: true);
+        using (var writer = new StreamWriter(Application.persistentDataPath + "/logs/" + "participant" + GameControl.instance.participantId + ".csv", append: true))
+        {
+            writer.WriteLine("participantId,trialNumber,timeElapse,currTarget,currScore,missedJumps,missedTargets,overshots,undershots,sensorValue,logType");
+        }
     }
 
     public void addEntry(DataEntry entry)
@@ -27,10 +30,16 @@ public class Logger
 
     public void writeToCSV()
     {
-        using (var csv = new CsvWriter(writer))
+        using (var writer = new StreamWriter(Application.persistentDataPath + "/logs/" + "participant" + GameControl.instance.participantId + ".csv", append: true))
         {
-            //csv.Configuration.RegisterClassMap<DataEntryMap>();
-            csv.WriteRecords(records);
+            records.ForEach(async record =>
+            {
+                await writer.WriteLineAsync(record.participantId + "," + record.trialNumber + "," + record.timeElapse + "," + 
+                    record.currTarget + "," + record.currScore + "," + record.missedJumps + "," + record.missedTargets + "," + record.overshots + "," + 
+                    record.undershots + "," + record.sensorValue + "," + record.logtype);
+               
+            });
         }
+        records.Clear();
     }
 }

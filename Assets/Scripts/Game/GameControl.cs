@@ -191,8 +191,9 @@ public class GameControl : MonoBehaviour
         
         if (trialOver == true && menuOn == false)
         {
-            if(trialNumber < 1)
+            if(trialNumber < 20)
             {
+                logger.writeToCSV();
                 SetNextTrial();
             } else
             {
