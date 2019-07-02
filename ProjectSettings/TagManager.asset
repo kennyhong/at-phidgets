@@ -13,6 +13,8 @@ TagManager:
   - UI
   - Widget
   - Window
+  - StartLine
+  - FinishLine
   layers:
   - Default
   - TransparentFX
@@ -26,7 +28,7 @@ TagManager:
   - Threshold
   - Crate
   - Target
-  - 
+  - lines
   - 
   - 
   - 

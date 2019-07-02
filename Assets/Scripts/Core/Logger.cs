@@ -19,7 +19,8 @@ public class Logger
         }
         using (var writer = new StreamWriter(Application.persistentDataPath + "/logs/" + "participant" + GameControl.instance.participantId + ".csv", append: true))
         {
-            writer.WriteLine("participantId,trialNumber,timeElapse,currTarget,currScore,missedJumps,missedTargets,overshots,undershots,sensorValue,logType");
+            writer.WriteLine("participantId,condition,trialNumber,timeElapse,currTarget,currTargetTimeBegin,currTargetTimeEnd,currScore,missedJumps,missedTargets,overshots,undershots,sensorValue,logType");
+            writer.Close();
         }
     }
 
@@ -28,17 +29,18 @@ public class Logger
         records.Add(entry);
     }
 
-    public void writeToCSV()
+    public async void writeToCSV()
     {
         using (var writer = new StreamWriter(Application.persistentDataPath + "/logs/" + "participant" + GameControl.instance.participantId + ".csv", append: true))
         {
-            records.ForEach(async record =>
+            for(int i = 0; i < records.Count; i++)
             {
-                await writer.WriteLineAsync(record.participantId + "," + record.trialNumber + "," + record.timeElapse + "," + 
-                    record.currTarget + "," + record.currScore + "," + record.missedJumps + "," + record.missedTargets + "," + record.overshots + "," + 
-                    record.undershots + "," + record.sensorValue + "," + record.logtype);
-               
-            });
+                await writer.WriteLineAsync(records[i].participantId + "," + records[i].mode + "," + records[i].trialNumber + "," + records[i].timeElapse + "," +
+                    records[i].currTarget + "," + records[i].currTargetBegin + "," + records[i].currTargetEnd + "," + records[i].currScore + "," +
+                    records[i].missedJumps + "," + records[i].missedTargets + "," +
+                    records[i].overshots + "," + records[i].undershots + "," + records[i].sensorValue + "," + records[i].logtype);
+            }
+            writer.Close();
         }
         records.Clear();
     }

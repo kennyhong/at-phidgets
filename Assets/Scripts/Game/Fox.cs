@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Fox : MonoBehaviour
 {
-    private const float COOLDOWN_TIME = 30f;
+    private const float COOLDOWN_TIME = 45f;
     private float cooldownTimer = 0f;
     public static Fox instance;
     private Rigidbody2D rb2d;
@@ -15,7 +15,7 @@ public class Fox : MonoBehaviour
     public float sensorValue = 0f;
     private BoxCollider2D collider2d;
     private int collisionTest = 0;
-    private bool firstJump = true;
+    public bool firstJump = true;
     private bool jumpCooldownStatus = true;
     private bool repeatedBackground = true;
 
@@ -50,7 +50,7 @@ public class Fox : MonoBehaviour
                 repeatedBackground = true;
                 DataEntry entry = new DataEntry(
                         GameControl.instance.stopwatch.ElapsedMilliseconds,
-                        GameControl.instance.totalTargets,
+                        GameControl.instance.currTarget,
                         GameControl.instance.sensorValue,
                         LogType.MISSED_JUMP
 
@@ -85,11 +85,18 @@ public class Fox : MonoBehaviour
         {
             anim.SetTrigger("Run");
         }
-        if (GameControl.instance.gamemode == GameMode.Visual || GameControl.instance.gamemode == GameMode.Audio && onGround == true && !GameControl.instance.trialOver)
+        if (onGround == true && !GameControl.instance.trialOver)
         {
             if ((GameControl.instance.sensorValue * 1000f) > 500f && !jumpCooldownStatus)
             {
                 sensorValue = ((float)GameControl.instance.sensorValue * 1000f);
+                DataEntry entry = new DataEntry(
+                       GameControl.instance.stopwatch.ElapsedMilliseconds,
+                       GameControl.instance.currTarget,
+                       GameControl.instance.sensorValue,
+                       LogType.JUMP
+                   );
+                GameControl.instance.logger.addEntry(entry);
                 if (sensorValue > 4200f)
                 {
                     sensorValue = 4200f;

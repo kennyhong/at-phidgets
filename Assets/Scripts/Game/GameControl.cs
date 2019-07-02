@@ -36,6 +36,10 @@ public class GameControl : MonoBehaviour
     private bool studyComplete = false;
     public GameObject VisualBlock;
 
+    public int currTarget = 0;
+    public float currTargetBegin = -1f;
+    public float currTargetEnd = -1f;
+
     // Score Board
     public TextMeshPro OvershotText;
     public TextMeshPro UndershotText;
@@ -153,6 +157,10 @@ public class GameControl : MonoBehaviour
                 break;
             case GameMode.VATransitive:
                 GamePanel.SetActive(false);
+                if(trialNumber > 2)
+                {
+                    VisualBlock.SetActive(true);
+                }
                 trialOver = false;
                 stopwatch.Start();
                 StartCoroutine(signalCoroutine);
@@ -191,7 +199,7 @@ public class GameControl : MonoBehaviour
         
         if (trialOver == true && menuOn == false)
         {
-            if(trialNumber < 20)
+            if(trialNumber < 4)
             {
                 logger.writeToCSV();
                 SetNextTrial();
@@ -273,8 +281,9 @@ public class GameControl : MonoBehaviour
 
         TrialMode.text = "Mode: " + gamemode.ToString();
         CurrentTrial.text = "Current Trial: " + trialNumber + " / 20";
+        Fox.instance.firstJump = true;
         GamePanel.SetActive(true);
-        if(gamemode == GameMode.Audio)
+        if(gamemode == GameMode.Audio || gamemode == GameMode.VATransitive)
         {
             VisualBlock.SetActive(false);
         }

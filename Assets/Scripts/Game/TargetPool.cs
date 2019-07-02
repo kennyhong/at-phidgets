@@ -48,21 +48,7 @@ public class TargetPool : MonoBehaviour
         {
             timeSinceLastSpawned += Time.deltaTime;
         }
-        if (GameControl.instance.totalTargets == 20 && Fox.instance.onGround)
-        {
-            GameControl.instance.trialOver = true;
-            GameControl.instance.trialCooldown = true;
-            GameControl.instance.totalTargets = 0;
-            GameControl.instance.StopAllCoroutines();
-            GameControl.instance.playDelayCount = 0;
-            GameControl.instance.delayStartTimer = 0;
-            GameControl.instance.delayStart = false;
-            GameControl.instance.PlaySignalAudio(GameControl.instance.TrialCompletedSound);
-            GameControl.instance.stopwatch.Stop();
-            GameControl.instance.stopwatch.Reset();
-            ResetBoxes();
-            firstBox = true;     
-        }
+       
 
             if (GameControl.instance.trialOver == false && timeSinceLastSpawned >= spawnRate)
         {
@@ -73,43 +59,59 @@ public class TargetPool : MonoBehaviour
                 if (!targetBoxes[currentBox - 1].GetComponent<TargetBox>().targetHit)
                 {
                     GameControl.instance.PlayScoreAudio(GameControl.instance.MissedTargetSound);
+                    GameControl.instance.currTargetEnd = GameControl.instance.stopwatch.ElapsedMilliseconds;
                     GameControl.instance.missedTargets++;
                     GameControl.instance.totalTargets++;
-                    DataEntry entry = new DataEntry(
-                        GameControl.instance.stopwatch.ElapsedMilliseconds,
-                        GameControl.instance.totalTargets,
-                        GameControl.instance.sensorValue,
-                        LogType.MISSED_TARGET
-                    );
-                    GameControl.instance.logger.addEntry(entry);
+                    GameControl.instance.currTargetBegin = -1f;
+                    GameControl.instance.currTargetEnd = -1f;
                 }  else
                 {
+                    GameControl.instance.currTargetEnd = GameControl.instance.stopwatch.ElapsedMilliseconds;
                     targetBoxes[currentBox - 1].GetComponent<TargetBox>().targetHit = false;
                     targetBoxes[currentBox - 1].GetComponent<TargetBox>().scoreCounted = false;
+                    GameControl.instance.currTargetBegin = -1f;
+                    GameControl.instance.currTargetEnd = -1f;
                 }
             } else if (currentBox == 0 && firstBox == false)
             {
                 if (!targetBoxes[boxPoolSize - 1].GetComponent<TargetBox>().targetHit)
                 {
                     GameControl.instance.PlayScoreAudio(GameControl.instance.MissedTargetSound);
+                    GameControl.instance.currTargetEnd = GameControl.instance.stopwatch.ElapsedMilliseconds;
                     GameControl.instance.missedTargets++;
                     GameControl.instance.totalTargets++;
-                    DataEntry entry = new DataEntry(
-                        GameControl.instance.stopwatch.ElapsedMilliseconds,
-                        GameControl.instance.totalTargets,
-                        GameControl.instance.sensorValue,
-                        LogType.MISSED_TARGET
-                    );
-                    GameControl.instance.logger.addEntry(entry);
+                    GameControl.instance.currTargetBegin = -1f;
+                    GameControl.instance.currTargetEnd = -1f;
                 } else
                 {
+                    GameControl.instance.currTargetEnd = GameControl.instance.stopwatch.ElapsedMilliseconds;
                     targetBoxes[boxPoolSize - 1].GetComponent<TargetBox>().targetHit = false;
                     targetBoxes[boxPoolSize - 1].GetComponent<TargetBox>().scoreCounted = false;
+                    GameControl.instance.currTargetBegin = -1f;
+                    GameControl.instance.currTargetEnd = -1f;
                 }
             }
-            
+
+            if (GameControl.instance.totalTargets == 10 && Fox.instance.onGround)
+            {
+                GameControl.instance.trialOver = true;
+                GameControl.instance.trialCooldown = true;
+                GameControl.instance.totalTargets = 0;
+                GameControl.instance.StopAllCoroutines();
+                GameControl.instance.playDelayCount = 0;
+                GameControl.instance.delayStartTimer = 0;
+                GameControl.instance.delayStart = false;
+                GameControl.instance.PlaySignalAudio(GameControl.instance.TrialCompletedSound);
+                GameControl.instance.stopwatch.Stop();
+                GameControl.instance.stopwatch.Reset();
+                ResetBoxes();
+                firstBox = true;
+            }
+
             targetBoxes[currentBox].transform.position = new Vector3(spawnXposition, spawnYposition, spawnZposition);
+            GameControl.instance.currTargetBegin = GameControl.instance.stopwatch.ElapsedMilliseconds;
             currentBox++;
+            GameControl.instance.currTarget++;
             if(currentBox >= boxPoolSize)
             {
                 currentBox = 0;

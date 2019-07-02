@@ -267,6 +267,7 @@
     <Compile Include="Assets\Scripts\Game\ScrollingObject.cs" />
     <Compile Include="Assets\Scripts\Game\TargetBox.cs" />
     <Compile Include="Assets\Scripts\Game\TargetPool.cs" />
+    <Compile Include="Assets\Scripts\Game\WindowTimer.cs" />
     <Compile Include="Assets\Scripts\Networking\Client.cs" />
     <Compile Include="Assets\Scripts\Networking\SensorClient.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
