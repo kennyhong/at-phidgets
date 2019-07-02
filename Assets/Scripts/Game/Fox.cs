@@ -15,8 +15,9 @@ public class Fox : MonoBehaviour
     public float sensorValue = 0f;
     private BoxCollider2D collider2d;
     private int collisionTest = 0;
+    private bool gameStart = true;
     public bool firstJump = true;
-    private bool jumpCooldownStatus = true;
+    public bool jumpCooldownStatus = true;
     private bool repeatedBackground = true;
 
     void Awake()
@@ -40,10 +41,14 @@ public class Fox : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+
+        if (gameStart)
+        {
+            gameStart = false;
+        } else if (collision.gameObject.tag == "Ground")
         {
             onGround = true;
-            if (!hasCollided && !firstJump && !repeatedBackground)
+            if (!hasCollided && !gameStart && !repeatedBackground)
             {
                 GameControl.instance.PlaySignalAudio(GameControl.instance.MissedJumpSound);
                 GameControl.instance.missedJumps++;
@@ -57,10 +62,6 @@ public class Fox : MonoBehaviour
                     );
                 GameControl.instance.logger.addEntry(entry);
             }
-        }
-        if (firstJump)
-        {
-            firstJump = false;
         }
     }
 
@@ -87,7 +88,7 @@ public class Fox : MonoBehaviour
         }
         if (onGround == true && !GameControl.instance.trialOver)
         {
-            if ((GameControl.instance.sensorValue * 1000f) > 500f && !jumpCooldownStatus)
+            if ((GameControl.instance.sensorValue * 1000f) > 500f && !jumpCooldownStatus && !firstJump)
             {
                 sensorValue = ((float)GameControl.instance.sensorValue * 1000f);
                 DataEntry entry = new DataEntry(
@@ -110,6 +111,6 @@ public class Fox : MonoBehaviour
                 jumpCooldownStatus = true;
                 GameControl.instance.sensorValue = 0f;
             }
-        }
+        } 
     }
 }

@@ -128,6 +128,8 @@ public class GameControl : MonoBehaviour
 
     void StartTrial()
     {
+        sensorValue = 0f;
+        Fox.instance.sensorValue = 0f;
         switch (gamemode)
         {
             case GameMode.Visual:
@@ -167,6 +169,8 @@ public class GameControl : MonoBehaviour
                 menuOn = false;
                 break;
         }
+        Fox.instance.firstJump = false;
+        Fox.instance.jumpCooldownStatus = true;
     }
 
     // Update is called once per frame
@@ -249,18 +253,6 @@ public class GameControl : MonoBehaviour
         AudioFoxSource.Play();
     }
 
-    private void ReloadScene()
-    {
-        trialOver = true;
-        menuOn = true;
-        undershotCount = 0;
-        score = 0;
-        overshotCount = 0;
-        missedJumps = 0;
-        missedTargets = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
     private void SetNextTrial()
     {
         menuOn = true;
@@ -302,12 +294,6 @@ public class GameControl : MonoBehaviour
         Debug.Log("Client disconnecting...");
         client.DisconnectAndStop();
         Debug.Log("Done!");
-    }
-
-
-    private void OnApplicationQuit()
-    {
-
     }
 
     public void StudyComplete()

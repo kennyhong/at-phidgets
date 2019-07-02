@@ -39,22 +39,37 @@ public class TargetPool : MonoBehaviour
         }
         currentBox = 0;
         timeSinceLastSpawned = 0f;
-}
+        firstBox = true;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(GameControl.instance.trialOver == false)
+        if (GameControl.instance.trialOver == false)
         {
             timeSinceLastSpawned += Time.deltaTime;
         }
-       
 
-            if (GameControl.instance.trialOver == false && timeSinceLastSpawned >= spawnRate)
+        if (GameControl.instance.totalTargets == 10 && Fox.instance.onGround)
         {
-            
+            GameControl.instance.trialOver = true;
+            GameControl.instance.trialCooldown = true;
+            GameControl.instance.totalTargets = 0;
+            GameControl.instance.StopAllCoroutines();
+            GameControl.instance.playDelayCount = 0;
+            GameControl.instance.delayStartTimer = 0;
+            GameControl.instance.delayStart = false;
+            GameControl.instance.PlaySignalAudio(GameControl.instance.TrialCompletedSound);
+            GameControl.instance.stopwatch.Stop();
+            GameControl.instance.stopwatch.Reset();
+            ResetBoxes();
+        }
+
+        if (GameControl.instance.trialOver == false && timeSinceLastSpawned >= spawnRate)
+        {
+
             timeSinceLastSpawned = 0f;
-            if (currentBox > 0 && firstBox==false)
+            if (currentBox > 0 && firstBox == false)
             {
                 if (!targetBoxes[currentBox - 1].GetComponent<TargetBox>().targetHit)
                 {
@@ -64,7 +79,8 @@ public class TargetPool : MonoBehaviour
                     GameControl.instance.totalTargets++;
                     GameControl.instance.currTargetBegin = -1f;
                     GameControl.instance.currTargetEnd = -1f;
-                }  else
+                }
+                else
                 {
                     GameControl.instance.currTargetEnd = GameControl.instance.stopwatch.ElapsedMilliseconds;
                     targetBoxes[currentBox - 1].GetComponent<TargetBox>().targetHit = false;
@@ -72,7 +88,8 @@ public class TargetPool : MonoBehaviour
                     GameControl.instance.currTargetBegin = -1f;
                     GameControl.instance.currTargetEnd = -1f;
                 }
-            } else if (currentBox == 0 && firstBox == false)
+            }
+            else if (currentBox == 0 && firstBox == false)
             {
                 if (!targetBoxes[boxPoolSize - 1].GetComponent<TargetBox>().targetHit)
                 {
@@ -82,7 +99,8 @@ public class TargetPool : MonoBehaviour
                     GameControl.instance.totalTargets++;
                     GameControl.instance.currTargetBegin = -1f;
                     GameControl.instance.currTargetEnd = -1f;
-                } else
+                }
+                else
                 {
                     GameControl.instance.currTargetEnd = GameControl.instance.stopwatch.ElapsedMilliseconds;
                     targetBoxes[boxPoolSize - 1].GetComponent<TargetBox>().targetHit = false;
@@ -91,28 +109,11 @@ public class TargetPool : MonoBehaviour
                     GameControl.instance.currTargetEnd = -1f;
                 }
             }
-
-            if (GameControl.instance.totalTargets == 10 && Fox.instance.onGround)
-            {
-                GameControl.instance.trialOver = true;
-                GameControl.instance.trialCooldown = true;
-                GameControl.instance.totalTargets = 0;
-                GameControl.instance.StopAllCoroutines();
-                GameControl.instance.playDelayCount = 0;
-                GameControl.instance.delayStartTimer = 0;
-                GameControl.instance.delayStart = false;
-                GameControl.instance.PlaySignalAudio(GameControl.instance.TrialCompletedSound);
-                GameControl.instance.stopwatch.Stop();
-                GameControl.instance.stopwatch.Reset();
-                ResetBoxes();
-                firstBox = true;
-            }
-
             targetBoxes[currentBox].transform.position = new Vector3(spawnXposition, spawnYposition, spawnZposition);
             GameControl.instance.currTargetBegin = GameControl.instance.stopwatch.ElapsedMilliseconds;
             currentBox++;
             GameControl.instance.currTarget++;
-            if(currentBox >= boxPoolSize)
+            if (currentBox >= boxPoolSize)
             {
                 currentBox = 0;
             }
