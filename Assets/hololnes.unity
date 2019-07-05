@@ -1037,11 +1037,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 313900976}
@@ -1331,7 +1331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &342976577
 Transform:
   m_ObjectHideFlags: 0
@@ -1904,11 +1904,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 478868934}
@@ -3405,11 +3405,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1005709704}
@@ -4144,11 +4144,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1411987071}
@@ -4972,11 +4972,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1632296796}
@@ -5214,7 +5214,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ScoreSound
       value: 
-      objectReference: {fileID: 8300000, guid: f73b5d1912fd84545bebca99ff38050c, type: 3}
+      objectReference: {fileID: 8300000, guid: d309e8ee9c739cb499c5b95f5c470897, type: 3}
     - target: {fileID: 6698445105388024400, guid: ba3e569ccffcf7e4b91797a8246c2029,
         type: 3}
       propertyPath: TargetHitSound
@@ -5249,7 +5249,7 @@ PrefabInstance:
         type: 3}
       propertyPath: JumpSignalSound
       value: 
-      objectReference: {fileID: 8300000, guid: 81b60717478a9614eb1708912ff6b938, type: 3}
+      objectReference: {fileID: 8300000, guid: f73b5d1912fd84545bebca99ff38050c, type: 3}
     - target: {fileID: 6698445105388024400, guid: ba3e569ccffcf7e4b91797a8246c2029,
         type: 3}
       propertyPath: AudioScoreSource
@@ -5268,7 +5268,7 @@ PrefabInstance:
     - target: {fileID: 6698445105388024400, guid: ba3e569ccffcf7e4b91797a8246c2029,
         type: 3}
       propertyPath: participantId
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6698445105388024400, guid: ba3e569ccffcf7e4b91797a8246c2029,
         type: 3}

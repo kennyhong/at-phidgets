@@ -50,7 +50,7 @@ public class TargetPool : MonoBehaviour
             timeSinceLastSpawned += Time.deltaTime;
         }
 
-        if (GameControl.instance.totalTargets == 10 && Fox.instance.onGround)
+        if (GameControl.instance.totalTargets == 20 && Fox.instance.onGround)
         {
             GameControl.instance.trialOver = true;
             GameControl.instance.trialCooldown = true;

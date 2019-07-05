@@ -159,7 +159,7 @@ public class GameControl : MonoBehaviour
                 break;
             case GameMode.VATransitive:
                 GamePanel.SetActive(false);
-                if(trialNumber > 2)
+                if(trialNumber > 10)
                 {
                     VisualBlock.SetActive(true);
                 }
@@ -203,7 +203,7 @@ public class GameControl : MonoBehaviour
         
         if (trialOver == true && menuOn == false)
         {
-            if(trialNumber < 4)
+            if(trialNumber < 20)
             {
                 logger.writeToCSV();
                 SetNextTrial();
