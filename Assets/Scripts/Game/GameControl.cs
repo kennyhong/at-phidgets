@@ -35,10 +35,12 @@ public class GameControl : MonoBehaviour
     private float delayStartTotal = 0.35f;
     private bool studyComplete = false;
     public GameObject VisualBlock;
+    public GameObject StartTimerText;
 
     public int currTarget = 0;
     public float currTargetBegin = -1f;
     public float currTargetEnd = -1f;
+    private bool confirm = false;
 
     // Score Board
     public TextMeshPro OvershotText;
@@ -46,6 +48,7 @@ public class GameControl : MonoBehaviour
     public TextMeshPro ScoreText;
     public TextMeshPro MissedJumpsText;
     public TextMeshPro MissedTargetsText;
+    public TextMeshPro LastSensorValue;
 
     public TextMeshPro BlockOvershotText;
     public TextMeshPro BlockUndershotText;
@@ -62,6 +65,8 @@ public class GameControl : MonoBehaviour
     public TextMeshPro Instructions;
     public TextMeshPro NumberTargets;
     public TextMeshPro StudyCompletedText;
+
+    public TextMeshPro SqueezeBagText;
 
     public TextMeshPro SummaryTitle;
     public TextMeshPro ScoreSummary;
@@ -85,6 +90,9 @@ public class GameControl : MonoBehaviour
     public AudioClip UndershotSound;
     public AudioClip MissedJumpSound;
 
+    public float timeLeft = 3.0f;
+    public TextMeshPro startText; // used for showing countdown from 3, 2, 1 
+    public bool startTimer = false;
 
     //Server
     public string ip;
@@ -133,7 +141,6 @@ public class GameControl : MonoBehaviour
         switch (gamemode)
         {
             case GameMode.Visual:
-                GamePanel.SetActive(false);
                 AudioScoreSource.mute = true;
                 AudioFoxSource.mute = true;
                 AudioSignalSource.mute = true;
@@ -143,7 +150,6 @@ public class GameControl : MonoBehaviour
                 menuOn = false;
                 break;
             case GameMode.Audio:
-                GamePanel.SetActive(false);
                 VisualBlock.SetActive(true);
                 trialOver = false;
                 stopwatch.Start();
@@ -151,14 +157,12 @@ public class GameControl : MonoBehaviour
                 menuOn = false;
                 break;
             case GameMode.VisualAudio:
-                GamePanel.SetActive(false);
                 trialOver = false;
                 stopwatch.Start();
                 StartCoroutine(signalCoroutine);
                 menuOn = false;
                 break;
             case GameMode.VATransitive:
-                GamePanel.SetActive(false);
                 if(trialNumber > 10)
                 {
                     VisualBlock.SetActive(true);
@@ -212,11 +216,38 @@ public class GameControl : MonoBehaviour
                 StudyComplete();
             }
         }
-        if (sensorValue * 1000f > 900f && trialOver && !trialCooldown && !studyComplete)
+        if (sensorValue * 1000f > 900f && trialOver && !trialCooldown && !studyComplete && !confirm)
         {
-            StartTrial();
+            sensorValue = 0;
+            SqueezeBagText.text = "Squeeze Bag Again to Confirm Start";
+            startTimer = false;
+            confirm = true;
+            trialCooldown = true;
+        } else if (sensorValue * 1000f > 900f && trialOver && !trialCooldown && !studyComplete && confirm)
+        {
+
+            startTimer = true;
+            SqueezeBagText.text = "Squeeze Bag to Start";
         }
-        if(!trialOver && delayStart)
+        if (trialOver && startTimer && !trialCooldown && !studyComplete && confirm)
+        {
+            GamePanel.SetActive(false);
+            StartTimerText.SetActive(true);
+            timeLeft -= Time.deltaTime;
+            startText.text = (timeLeft).ToString("0");
+            if (timeLeft < 0)
+            {
+                startTimer = false;
+                timeLeft = 3.0f;
+                confirm = false;
+                StartTimerText.SetActive(false);
+                StartTrial();
+            }
+        }
+
+
+
+        if (!trialOver && delayStart)
         {
             if(playDelayCount >= playDelay)
             {
@@ -274,6 +305,7 @@ public class GameControl : MonoBehaviour
         TrialMode.text = "Mode: " + gamemode.ToString();
         CurrentTrial.text = "Current Trial: " + trialNumber + " / 20";
         Fox.instance.firstJump = true;
+        startTimer = true;
         GamePanel.SetActive(true);
         if(gamemode == GameMode.Audio || gamemode == GameMode.VATransitive)
         {

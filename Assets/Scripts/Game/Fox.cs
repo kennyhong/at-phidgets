@@ -103,12 +103,14 @@ public class Fox : MonoBehaviour
                     sensorValue = 4200f;
                 }
                 rb2d.velocity = Vector2.zero;
+                GameControl.instance.PlayFoxAudio(GameControl.instance.JumpSound);
                 rb2d.AddForce(new Vector2(0, upforce));
                 anim.SetTrigger("Jump");
                 onGround = false;
                 repeatedBackground = false;
                 hasCollided = false;
                 jumpCooldownStatus = true;
+                GameControl.instance.LastSensorValue.text = "Last Sensor Value: " + sensorValue;
                 GameControl.instance.sensorValue = 0f;
             }
         } 
