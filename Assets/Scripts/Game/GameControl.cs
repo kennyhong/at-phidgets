@@ -25,17 +25,19 @@ public class GameControl : MonoBehaviour
     public bool menuOn = true;
     public System.Diagnostics.Stopwatch stopwatch;
     public float sensorValue = 0f;
-    private float trialCooldownTime = 60f;
+    private float trialCooldownTime = 3.0f;
     public bool trialCooldown = true;
     private IEnumerator signalCoroutine;
     public float playDelayCount = 0f;
     private float playDelay = 3f;
     public bool delayStart = false;
     public float delayStartTimer = 0f;
-    private float delayStartTotal = 0.35f;
+    private float delayStartTotal = 0.45f;
     private bool studyComplete = false;
     public GameObject VisualBlock;
     public GameObject StartTimerText;
+    public GameObject scoreBoard;
+    public bool breakTime = false;
 
     public int currTarget = 0;
     public float currTargetBegin = -1f;
@@ -55,6 +57,7 @@ public class GameControl : MonoBehaviour
     public TextMeshPro BlockScoreText;
     public TextMeshPro BlockMissedJumpsText;
     public TextMeshPro BlockMissedTargetsText;
+    public TextMeshPro BlockLastSensorValue;
 
     //Game Panel
     public GameObject GamePanel;
@@ -193,19 +196,27 @@ public class GameControl : MonoBehaviour
         BlockMissedTargetsText.text = "Missed Targets: " + missedTargets;
 
         client.Send("ping");
+
         if(trialCooldown && trialCooldownTime > 0f)
         {
-            trialCooldownTime--;
-            StartCooldownTimer.text = "Cooldown Timer: " + trialCooldownTime;
-        } else if (trialCooldownTime == 0f && trialCooldown)
+            trialCooldownTime -= Time.deltaTime;
+            StartCooldownTimer.text = "Cooldown Timer: " + trialCooldownTime.ToString("0");
+        } else if (trialCooldownTime < 0f && trialCooldown && !breakTime)
         {
             trialCooldown = false;
-            trialCooldownTime = 60f;
+            trialCooldownTime = 3.0f;
             StartCooldownTimer.text = "Cooldown Timer: Ready";
             PlaySignalAudio(TrialReadySound);
+        } else if (trialCooldownTime < 0f && trialCooldown && breakTime)
+        {
+            trialCooldown = false;
+            StartCooldownTimer.text = "Cooldown Timer: Ready";
+            trialCooldownTime = 3.0f;
+            breakTime = false;
+            PlaySignalAudio(TrialReadySound);
         }
-        
-        if (trialOver == true && menuOn == false)
+
+            if (trialOver == true && menuOn == false)
         {
             if(trialNumber < 20)
             {
@@ -223,7 +234,8 @@ public class GameControl : MonoBehaviour
             startTimer = false;
             confirm = true;
             trialCooldown = true;
-        } else if (sensorValue * 1000f > 900f && trialOver && !trialCooldown && !studyComplete && confirm)
+        }
+        else if (sensorValue * 1000f > 900f && trialOver && !trialCooldown && !studyComplete && confirm)
         {
 
             startTimer = true;
@@ -232,6 +244,7 @@ public class GameControl : MonoBehaviour
         if (trialOver && startTimer && !trialCooldown && !studyComplete && confirm)
         {
             GamePanel.SetActive(false);
+            scoreBoard.SetActive(true);
             StartTimerText.SetActive(true);
             timeLeft -= Time.deltaTime;
             startText.text = (timeLeft).ToString("0");
@@ -242,6 +255,11 @@ public class GameControl : MonoBehaviour
                 confirm = false;
                 StartTimerText.SetActive(false);
                 StartTrial();
+
+                if (trialNumber % 5 == 0)
+                {
+                    trialCooldownTime = 60.0f;
+                }
             }
         }
 
@@ -304,8 +322,10 @@ public class GameControl : MonoBehaviour
 
         TrialMode.text = "Mode: " + gamemode.ToString();
         CurrentTrial.text = "Current Trial: " + trialNumber + " / 20";
+        client.Send("Current Trial: " + trialNumber + " / 20");
         Fox.instance.firstJump = true;
         startTimer = true;
+        scoreBoard.SetActive(false);
         GamePanel.SetActive(true);
         if(gamemode == GameMode.Audio || gamemode == GameMode.VATransitive)
         {

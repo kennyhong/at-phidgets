@@ -17,7 +17,7 @@
     <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>WSAPlayer:21</UnityBuildTarget>
-    <UnityVersion>2018.3.14f1</UnityVersion>
+    <UnityVersion>2017.4.12f1</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion>6</LangVersion>
   </PropertyGroup>
@@ -33,7 +33,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;UNITY_WSA;UNITY_WSA_10_0;UNITY_WINRT_10_0;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;PLATFORM_OVERRIDES_APPLICATION_PACKAGE_NAME;ENABLE_DOTNET;ENABLE_MANAGED_JOBS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;ENABLE_WINMD_SUPPORT;WINDOWS_UWP</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_12;UNITY_2017_4;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WSA_10_0;UNITY_WINRT_10_0;ENABLE_WINMD_SUPPORT;WINDOWS_UWP</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -43,240 +43,165 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;UNITY_WSA;UNITY_WSA_10_0;UNITY_WINRT_10_0;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;PLATFORM_OVERRIDES_APPLICATION_PACKAGE_NAME;ENABLE_DOTNET;ENABLE_MANAGED_JOBS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;ENABLE_WINMD_SUPPORT;WINDOWS_UWP</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_12;UNITY_2017_4;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_METRO;UNITY_METRO;UNITY_METRO_API;PLATFORM_WINRT;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_NETWORK;ENABLE_EVENT_QUEUE;UNITY_PLATFORM_THREAD_TO_CORE_MAPPING;ENABLE_SUBSTANCE;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;CURL_STATICLIB;ENABLE_VR;ENABLE_AR;UNITY_WSA;ENABLE_DOTNET;UNITY_WSA_10_0;UNITY_WINRT_10_0;ENABLE_WINMD_SUPPORT;WINDOWS_UWP</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.6-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.6-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML">
+      <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.6-api\System.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.6-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.6-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.6-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.6-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AIModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ARModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ARModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AccessibilityModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AccessibilityModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AnimationModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AnimationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AssetBundleModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AudioModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.BaselibModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.BaselibModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ClothModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.CoreModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.CrashReportingModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.CrashReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.DirectorModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.DirectorModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.FileSystemHttpModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.FileSystemHttpModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.GameCenterModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.GameCenterModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.GridModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.GridModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.HotReloadModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.HotReloadModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.IMGUIModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ImageConversionModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ImageConversionModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.InputModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.InputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.JSONSerializeModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.JSONSerializeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.LocalizationModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.LocalizationModule.dll</HintPath>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ParticleSystemModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ParticleSystemModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.PerformanceReportingModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.PhysicsModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.PhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.Physics2DModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.Physics2DModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ProfilerModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ProfilerModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ScreenCaptureModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ScreenCaptureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.SharedInternalsModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.SharedInternalsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.SpriteMaskModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.SpriteMaskModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.SpriteShapeModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.SpriteShapeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.StreamingModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.StreamingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.StyleSheetsModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.StyleSheetsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.SubstanceModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.SubstanceModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TLSModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TLSModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TerrainModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TerrainModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TerrainPhysicsModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TerrainPhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TextCoreModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TextCoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TextRenderingModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TilemapModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TilemapModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TimelineModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TimelineModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UIModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UIElementsModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UIElementsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UNETModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UNETModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UmbraModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UmbraModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityAnalyticsModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityAnalyticsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityConnectModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityTestProtocolModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityTestProtocolModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.VFXModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.VFXModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.VRModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.VRModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.VehiclesModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ClothModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AIModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UIModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UNETModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.WebModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.VRModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.StyleSheetsModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.GridModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.InputModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.VideoModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.WindModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.WindModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroSupport/Managed/il2cpp/UnityEngine.XRModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.WindowsMR.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="MixedRealityToolkit.Core.Inspectors.ServiceInspectors">
-      <HintPath>Library/ScriptAssemblies/MixedRealityToolkit.Core.Inspectors.ServiceInspectors.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Core.Build">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Core.Build.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Core.Extensions.EditorClassExtensions">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Core.Extensions.EditorClassExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Inspectors">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.SDK.Inspectors.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.OpenVR">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Providers.OpenVR.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Core.Definitions.Utilities.Editor">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Core.Definitions.Utilities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSystem.Inspectors">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Services.InputSystem.Inspectors.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Utilities.Gltf.Importers">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Utilities.Gltf.Importers.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Core.Inspectors">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Core.Inspectors.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Core.Utilities.Editor">
-      <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Core.Utilities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Timeline">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/UnityExtensions/Unity/Timeline/Runtime/UnityEngine.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Runtime/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Managed/il2cpp/UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="CsvHelper">
       <HintPath>Assets/DLLs/CsvHelper.dll</HintPath>
@@ -287,365 +212,11 @@
     <Reference Include="Phidget22.NET">
       <HintPath>Assets/DLLs/Phidget22.NET.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/hongk/Desktop/at-prototypes/at-phidgets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/hongk/Desktop/at-prototypes/at-phidgets/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="mscorlib">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="System">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Core">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="netstandard">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll</HintPath>
-    </Reference>
-    <Reference Include="System.AppContext">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Concurrent">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.NonGeneric">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Specialized">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Annotations">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Console">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Debug">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Process">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Tools">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Dynamic.Runtime">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization.Calendars">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Pipes">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Expressions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Parallel">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Queryable">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Rtc">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.NameResolution">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.NetworkInformation">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Ping">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Requests">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Security">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Sockets">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebSockets">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ObjectModel">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.ILGeneration">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.Lightweight">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.Reader">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.ResourceManager">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.Writer">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Handles">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Numerics">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Claims">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Principal">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.SecureString">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Duplex">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Http">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.NetTcp">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Primitives">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Security">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.RegularExpressions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Overlapped">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Thread">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.ThreadPool">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Timer">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XDocument">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XmlDocument">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XPath">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityScript">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityScript.Lang">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\UnityScript.Lang.dll</HintPath>
-    </Reference>
-    <Reference Include="Boo.Lang">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\unityscript\Boo.Lang.dll</HintPath>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/hongk/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/hongk/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Windows">
       <HintPath>C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.18362.0\Facade\Windows.winmd</HintPath>
@@ -906,77 +477,11 @@
       <HintPath>C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.18362.0\Facade\Windows.winmd</HintPath>
     </Reference>
     <Reference Include="System.Runtime.WindowsRuntime">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\il2cpp\BCLExtensions\System.Runtime.WindowsRuntime.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\il2cpp\BCLExtensions\System.Runtime.WindowsRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.3.14f1\Editor\Data\il2cpp\BCLExtensions\System.Runtime.WindowsRuntime.UI.Xaml.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\il2cpp\BCLExtensions\System.Runtime.WindowsRuntime.UI.Xaml.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{F1CA471D-22AC-18A9-132D-9C670FF66678}</Project>
-      <Name>Unity.TextMeshPro.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Analytics.DataPrivacy.Player.csproj">
-      <Project>{42411805-2A76-B786-50D5-240EEE2DE49C}</Project>
-      <Name>Unity.Analytics.DataPrivacy.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.WindowsMR.Player.csproj">
-      <Project>{83F5DC8B-F4E3-DE24-5B63-E900B5A94812}</Project>
-      <Name>Unity.XR.WindowsMR.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Player.csproj">
-      <Project>{CB6607B2-6A1E-E789-F581-855AD50EA17B}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Core.Utilities.Async.Player.csproj">
-      <Project>{93D4B50D-1997-4325-9D9A-819B94F06722}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Core.Utilities.Async.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.Player.csproj">
-      <Project>{F2BCBB74-6AC0-BB8F-3C3A-0A17D53927D9}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Utilities.Gltf.Player.csproj">
-      <Project>{E4856E8A-0DA2-71AC-9A64-3E44734F583A}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Utilities.Gltf.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Player.csproj">
-      <Project>{727B8E52-3D66-AE7B-BD38-F9D8FD88DD56}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.Player.csproj">
-      <Project>{BA2FB561-2A3F-E7AB-3761-5B90784852F5}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="MixedRealityToolkit.Services.CameraSystem.Player.csproj">
-      <Project>{6CEF03DB-DC75-AED0-8A2F-2E7A2D65C906}</Project>
-      <Name>MixedRealityToolkit.Services.CameraSystem.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.SDK.Player.csproj">
-      <Project>{ECBB42D1-A9C2-40B6-41A6-BA9CA760A185}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.SDK.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.TeleportSystem.Player.csproj">
-      <Project>{09B7D19C-D603-94A7-6511-2970C3BE8708}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Services.TeleportSystem.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.Player.csproj">
-      <Project>{D90CE579-1DB1-9FC7-8189-451F996ACB27}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.InputSystem.Player.csproj">
-      <Project>{1D02E31F-51C1-523C-5B60-68B5D4D47551}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Services.InputSystem.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.BoundarySystem.Player.csproj">
-      <Project>{553B34A8-321C-F187-21A8-61C2784BE429}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Services.BoundarySystem.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.Player.csproj">
-      <Project>{D35AB74B-780F-6F44-D4E3-4223C8C8DC8D}</Project>
-      <Name>Microsoft.MixedReality.Toolkit.Services.InputSimulation.Player</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\2D ToonBear\Demo\Scripts\bearController.cs" />
@@ -1174,11 +679,705 @@
     <Compile Include="Assets\Chart and Graph\Tutorials\Radar\RadarChartFeed.cs" />
     <Compile Include="Assets\Chart and Graph\Tutorials\Stream Graph\StreamingGraph.cs" />
     <Compile Include="Assets\Chart and Graph\Tutorials\Zoom\GraphZoom.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\OpenVR\GenericOpenVRController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\OpenVR\OculusRemoteController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\OpenVR\OculusTouchController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\OpenVR\OpenVRDeviceManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\OpenVR\ViveKnucklesController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\OpenVR\ViveWandController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\OpenVR\WindowsMixedRealityOpenVRMotionController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\BaseWindowsMixedRealitySource.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityArticulatedHand.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityDeviceManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityEyeGazeDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityGGVHand.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityHandRecorder.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealitySpatialMeshObserver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityUtilities.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsVoiceInput\WindowsDictationInputProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsVoiceInput\WindowsSpeechInputProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Experimental\Features\Utilities\Solvers\HandConstraint.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Experimental\Features\Utilities\Solvers\HandConstraintPalmUp.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Audio\Influencers\AudioInfluencerController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Audio\Influencers\AudioLoFiEffect.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Audio\Influencers\AudioLoFiSourceQuality.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Audio\Influencers\AudioOccluder.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Events\InputActionUnityEvent.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Events\ManipulationEvent.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Events\ManipulationEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Events\PointerUnityEvent.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Events\TouchEvent.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Events\TouchEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\BaseEyeFocusHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\BaseFocusHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\BaseInputHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\ControllerPoseSynchronizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\DictationHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\EyeTrackingTarget.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\InputActionHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\ManipulationHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\PointerClickHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\PointerHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\SpeechInputHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Input\Handlers\TeleportHotSpot.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\HeadPositionOffset.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\ConstantViewSize.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\ControllerFinder.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\InBetween.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\Momentum.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\Orbital.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\Overlap.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\RadialView.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\Solver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\SolverHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\Utilities\Solvers\SurfaceMagnetism.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\IInteractableHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableAudioReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableEvent.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableOnClickReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableOnFocusReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableOnHoldReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableOnPressReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableOnToggleReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\InteractableReceiverList.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\ReceiverBase.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Events\ReceiverBaseMonoBehavior.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Interactable.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\InteractableToggleCollection.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Layout\ButtonBackgroundSize.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Layout\ButtonBackgroundSizeOffset.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Layout\ButtonBorder.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Layout\ButtonCollider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Layout\ButtonLayout.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Layout\ButtonSize.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Layout\ButtonSizeOffset.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Profile\InteractableProfileItem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Simulation\InteractablePointerSimulator.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\States\InteractableStateModel.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\States\InteractableStates.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\States\States.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableActivateTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableAnimatorTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableAudioTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableColorChildrenTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableColorTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableMaterialTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableOffsetTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableRotationTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableScaleTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableShaderTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableStringTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableTextureTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableThemeBase.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableThemeProperty.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableThemePropertySettings.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableThemePropertyValue.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableThemePropertyValueTypes.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\InteractableThemeShaderUtils.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\ScaleOffsetColorTheme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\Theme.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\Themes\ThemeEaseSettings.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\TypeResolution\InteractableType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\TypeResolution\InteractableTypeFinder.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\TypeResolution\InteractableTypesContainer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Interactable\Scripts\TypeResolution\TypeRestriction.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\AppBar\AppBar.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\AppBar\AppBarButton.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\BoundingBox\BoundingBox.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\BoundingBox\BoundingBoxHelper.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Collections\BaseObjectCollection.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Collections\CollectionEnums\LayoutOrder.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Collections\CollectionEnums\ObjectOrientationSurfaceType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Collections\GridObjectCollection.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Collections\ObjectCollectionNode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Collections\ScatterObjectCollection.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Collections\TileGridObjectCollection.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Controllers\MixedRealityControllerInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Controllers\MixedRealityControllerVisualizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Controllers\WindowsMixedRealityControllerVisualizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\AnimatedCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\BaseCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\CursorModifier.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\FingerCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\InteractiveMeshCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\MeshCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\ObjectCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\SpriteCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Cursors\TeleportCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Loader\LoaderController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\BaseControllerPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\DefaultPointerMediator.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\GGVPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\LinePointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\MousePointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\ParabolicTeleportPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\PokePointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\ShellHandRayPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\SpherePointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\SpherePointerGrabPoint.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\SpherePointerVisual.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\TeleportPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Pointers\TouchPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\PressableButtons\PhysicalPressEventRouter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\PressableButtons\PressableButton.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\PressableButtons\PressableButtonHoloLens2.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Receivers\InteractionReceiver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Slate\DragEnabler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Slate\FollowMeToggle.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Slate\HandInteractionPan.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Slate\HandInteractionPanZoom.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Slate\SlateEnabler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Sliders\PinchSlider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Sliders\SliderEvent.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Sliders\SliderEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Sliders\SliderSounds.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\IToolTipBackground.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\IToolTipHighlight.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTip.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTipBackgroundBlob.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTipBackgroundCorners.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTipBackgroundMesh.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTipConnector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\TooltipEnums\ConnectorFollowType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\TooltipEnums\ConnectorOrientType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\TooltipEnums\ConnectorPivotDirection.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\TooltipEnums\ConnectorPivotMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\TooltipEnums\DisplayMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\TooltipEnums\ToolTipAttachPoint.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTipLineHighlight.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTipSpawner.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Tooltips\ToolTipUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Utilities\Billboard.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Utilities\Easing.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Utilities\GazeHandHelper.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Features\UX\Scripts\Utilities\InteractableHighlight.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Input\Handlers\BaseInputHandlerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Input\Handlers\ControllerPoseSynchronizerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Input\Handlers\MixedRealityControllerVisualizerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Input\Handlers\PointerClickHandlerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Input\Handlers\SpeechInputHandlerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Utilities\Solvers\ControllerFinderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Utilities\Solvers\InBetweenInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\Utilities\Solvers\SolverHandlerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Collections\BaseCollectionInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Interactable\ButtonBackgroundSizeGizmo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Interactable\InteractableInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Interactable\InteractableReceiverInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Interactable\InteractableReceiverListInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Interactable\PressableButtonInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Interactable\StatesInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Interactable\ThemeInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Pointers\BaseControllerPointerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Pointers\LinePointerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Pointers\MousePointerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Pointers\ParabolicTeleportPointerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Pointers\SpherePointerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Pointers\TeleportPointerInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Sliders\PinchSliderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Tooltips\ToolTipConnectorInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.SDK\Inspectors\UX\Tooltips\ToolTipInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\BoundarySystem\MixedRealityBoundarySystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\CameraSystem\MixedRealityCameraSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\DiagnosticsSystem\MixedRealityDiagnosticsSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\DiagnosticsSystem\MixedRealityToolkitVisualProfiler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\IInputSimulationService.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\InputSimulationEnum.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\ManualCameraControl.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\MixedRealityInputSimulationProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\SimulatedArticulatedHand.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\SimulatedGestureHand.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\SimulatedHand.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\SimulatedHandDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSimulation\SimulatedHandUtils.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\FocusProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\GazePointerVisibilityStateMachine.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\GazeProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\InputSystemGlobalListener.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\Inspectors\MixedRealityInputModuleInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\MixedRealityInputModule.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\MixedRealityInputSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\NearInteractionGrabbable.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\NearInteractionTouchable.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\Utilities\CanvasEditorExtension.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\InputSystem\Utilities\CanvasUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\SpatialAwarenessSystem\MixedRealitySpatialAwarenessSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Services\TeleportSystem\MixedRealityTeleportSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\DocLinkAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\EnumFlagsAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\ExperimentalAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\ExtendsAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\HelpAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\ImplementsAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\MixedRealityControllerAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\MixedRealityDataProviderAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\MixedRealityExtensionServiceAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\MixedRealityServiceInspectorAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\MixedRealityServiceProfileAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\PhysicsLayerAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\PrefabAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\ScenePickAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\SystemTypeAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\TagPropertyAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Attributes\Vector3RangeAttribute.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\BaseMixedRealityProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\BoundarySystem\Edge.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\BoundarySystem\InscribedRectangle.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\BoundarySystem\MixedRealityBoundaryVisualizationProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\ControllerMappingLibrary.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\DeviceInputType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\GestureInputType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\Headset.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\InputSourceType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityControllerConfigurationFlags.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityControllerMapping.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityControllerMappingProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityControllerVisualizationProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityControllerVisualizationSetting.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityEyeTrackingProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityHandTrackingProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\MixedRealityInteractionMapping.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\SDKType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\SupportedControllerType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Devices\TrackingState.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Diagnostics\MixedRealityDiagnosticsProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\AnimatedCursorData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\CursorStateEnum.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\InputActionEventPair.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\InputActionRuleDigital.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\InputActionRuleDualAxis.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\InputActionRulePoseAxis.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\InputActionRuleQuaternionAxis.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\InputActionRuleSingleAxis.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\InputActionRuleVectorAxis.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\KeywordAndResponse.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealityGestureMapping.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealityGesturesProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealityInputAction.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealityInputActionRulesProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealityInputActionsProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealityInputSystemProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealityPointerProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\MixedRealitySpeechCommandsProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\PointerOption.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\SpeechCommands.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\TouchableEventType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\InputSystem\WindowsGestureSettings.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Lines\DistortionMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Lines\InterpolationMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Lines\InterpolationType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Lines\LinePointTransformMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Lines\LineRotationMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Lines\PointDistributionMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Lines\StepMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\MixedRealityCameraProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\MixedRealityInputDataProviderConfiguration.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\MixedRealityRegisteredServiceProvidersProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\MixedRealityServiceConfiguration.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\MixedRealitySpatialObserverConfiguration.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\MixedRealityToolkitConfigurationProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Physics\ComparableRaycastResult.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Physics\FocusDetails.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Physics\RayStep.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Physics\SceneQueryType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Physics\TeleportSurfaceResult.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\BaseSpatialAwarenessObject.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\BaseSpatialAwarenessObserverProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\MixedRealitySpatialAwarenessMeshObserverProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\MixedRealitySpatialAwarenessSystemProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\SpatialAwarenessMeshLevelOfDetail.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\SpatialAwarenessMeshObject.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\SpatialAwarenessPlanarObject.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\SpatialAwarenessSurfaceTypes.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\SpatialAwareness\SpatialMeshDisplayOptions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\AnimatorParameter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\ArticulatedHandPose.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\AutoStartBehavior.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\AxisType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\CollationOrder.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\ExperienceScale.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\Handedness.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\MixedRealityPose.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\MovementConstraintType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\OrientationType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\PivotAxis.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\ProcessResult.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\ProfileMenuItemIndices.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\RadialViewReferenceDirection.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\RecognitionConfidenceLevel.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\RotationConstraintType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\ScaleState.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\SolverOrientationType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\SupportedPlatforms.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\SystemType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\TrackedHandJoint.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\TrackedObjectType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\TypeGrouping.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\Vector3Smoothed.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Definitions\Utilities\VolumeType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Boundary\BoundaryEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Diagnostics\DiagnosticsEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\GenericBaseEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\BaseInputEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\DictationEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\FocusEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\HandPanEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\HandTrackingInputEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\InputEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\MixedRealityPointerEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\SourcePoseEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\SourceStateEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Input\SpeechEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\PlacementEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\SpatialAwareness\MixedRealitySpatialAwarenessEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\EventDatum\Teleport\TeleportEventData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\AnimationCurveExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\ArrayExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\BoundsExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\CameraExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\CanvasExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\CollectionsExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\Color32Extensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\ComparerExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\ComponentExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\DoubleExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\EditorClassExtensions\ScriptableObjectExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\EventSystemExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\FloatExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\GameObjectExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\GestureRecognizerExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\InteractionSourceExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\LayerExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\MathfExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\ProcessExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\QuaternionExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\RayExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\StringExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\Texture2DExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\TransformExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\UnityObjectExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Extensions\VectorExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ClippingBoxInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ClippingPlaneInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ClippingSphereInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ControllerPopupWindow.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Data\ControllerInputActionOption.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Data\ControllerInputActionOptions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ExtensionTemplates\ExtensionServiceCreator.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ExtensionTemplates\ExtensionServiceWizard.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\HoverLightInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\MixedRealityPreferences.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\MixedRealityStandardShaderGUI.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\MixedRealityToolkitFacadeHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\MixedRealityToolkitInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\BaseMixedRealityProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\BaseMixedRealityToolkitConfigurationProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityBoundaryVisualizationProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityCameraProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityControllerMappingProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityControllerVisualizationProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityDiagnosticsSystemProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityEyeTrackingProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityGesturesProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityHandTrackingProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityInputActionRulesInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityInputActionsProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityInputSystemProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityMouseInputProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityPointerProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityProfileCloneWindow.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityRegisteredServiceProviderProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealitySpatialAwarenessMeshObserverProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealitySpatialAwarenessSystemProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealitySpeechCommandsProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Profiles\MixedRealityToolkitConfigurationProfileInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\EnumFlagsAttributeDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\ExperimentalDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\HelpDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\InputActionPropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\MixedRealityPosePropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\PhysicsLayerAttributeDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\PrefabPropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\ScenePickPropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\SelectRepairedTypeWindow.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\SpeechCommandPropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\TagPropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\TypeReferencePropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\PropertyDrawers\Vector3RangePropertyDrawer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ProximityLightInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ServiceInspectors\BaseMixedRealityServiceInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ServiceInspectors\FocusProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ServiceInspectors\HandJointServiceInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ServiceInspectors\IMixedRealityServiceInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ServiceInspectors\ServiceFacadeInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ServiceInspectors\SpatialAwarenessSystemInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\ServiceInspectors\TeleportSystemInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\TextureCombinerWindow.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\InspectorFieldsUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\InspectorUIUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\BaseLineDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\BezierDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\EllipseLineDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\ParabolaPhysicalLineDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\ParabolicConstrainedLineDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\RectangleLineDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\SimpleLineDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Lines\DataProviders\SplineDataProviderInspector.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\MixedRealityInspectorUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Inspectors\Utilities\Text3DShaderGUI.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Audio\IAudioInfluencer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\BoundarySystem\IMixedRealityBoundaryHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\BoundarySystem\IMixedRealityBoundarySystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\CameraSystem\IMixedRealityCameraSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityControllerPoseSynchronizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityControllerVisualizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityDictationSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityHand.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityHandJointService.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityHandVisualizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealityInputDeviceManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Devices\IMixedRealitySpeechSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Diagnostics\IMixedRealityDiagnosticsHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Diagnostics\IMixedRealityDiagnosticsSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\EventSystem\Handlers\IMixedRealityEventHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\EventSystem\IMixedRealityEventSource.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\EventSystem\IMixedRealityEventSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\IMixedRealityServiceConfiguration.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityBaseInputHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityDictationHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityFocusChangedHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityFocusHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityGestureHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityHandJointHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityHandMeshHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityHandPanHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityHandTrackHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityInputActionHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityInputHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealityPointerHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealitySourcePoseHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealitySourceStateHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\Handlers\IMixedRealitySpeechHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\ICursorModifier.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IInputActionRule.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityCursor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityEyeGazeDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityEyeGazeProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityEyeSaccadeProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityFocusProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityGazeProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityInputSource.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityInputSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityMouseDeviceManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityMousePointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityNearPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityPointerMediator.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityTeleportPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IMixedRealityTouchPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\InputSystem\IPointerResult.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Physics\IBaseRayStabilizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Registrars\IMixedRealityServiceRegistrar.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Services\IMixedRealityDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Services\IMixedRealityDataProviderAccess.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Services\IMixedRealityExtensionService.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\Services\IMixedRealityService.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\SpatialAwareness\Handlers\IMixedRealitySpatialAwarenessObservationHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\SpatialAwareness\IMixedRealitySpatialAwarenessObject.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\SpatialAwareness\IMixedRealitySpatialAwarenessSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\SpatialAwareness\Observers\IMixedRealitySpatialAwarenessMeshObserver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\SpatialAwareness\Observers\IMixedRealitySpatialAwarenessObserver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\TeleportSystem\Handlers\IMixedRealityTeleportHandler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\TeleportSystem\IMixedRealityTeleportHotSpot.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Interfaces\TeleportSystem\IMixedRealityTeleportSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\BaseController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\BaseGenericInputSource.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\BaseInputDeviceManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\BaseSpatialObserver.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\GenericPointer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\Hands\BaseHand.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\Hands\BaseHandVisualizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\Hands\HandBounds.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\Hands\HandJointService.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\Hands\HandJointUtils.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\Hands\HandRay.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\GenericJoystickController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\MixedRealityMouseInputProfile.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\MouseController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\MouseDeviceManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\UnityJoystickManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\UnityTouchController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\UnityTouchDeviceManager.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Providers\UnityInput\XboxController.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Services\BaseCoreSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Services\BaseDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Services\BaseEventSystem.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Services\BaseExtensionService.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Services\BaseService.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Services\MixedRealityToolkit.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\AssetScriptReferenceRetargeter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Async\AwaiterExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Async\AwaitYieldInstructions\WaitForBackgroundThread.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Async\AwaitYieldInstructions\WaitForUpdate.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Async\Internal\AsyncCoroutineRunner.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Async\Internal\SyncContextUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\BuildDeployPreferences.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\BuildDeployWindow.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\BuildInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\BuildInfoExtensions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\IBuildInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\UnityPlayerBuildTools.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\UwpAppxBuildTools.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\UwpBuildDeployPreferences.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\UwpBuildInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\BuildAndDeploy\UwpPlayerBuildTools.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\CameraCache.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\CameraEventRouter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\ClippingBox.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\ClippingPlane.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\ClippingPrimitive.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\ClippingSphere.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\DebugUtilities.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\EdgeUtilities.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Facades\ServiceFacade.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\FastSimplexNoise.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\GameObjectManagement\GameObjectCreator.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\GameObjectManagement\GameObjectPool.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\GameObjectManagement\GenericPrefabInstanceCreator.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\GameObjectManagement\IGameObjectCreatorListener.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\AssemblyInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\Extensions\GltfExtension.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\Extensions\KHR_Materials_PbrSpecularGlossiness.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAccessor.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAccessorAttributeType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAccessorSparse.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAccessorSparseIndices.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAccessorSparseValues.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAlphaMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAnimation.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAnimationChannel.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAnimationChannelPath.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAnimationChannelTarget.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAnimationSampler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfAssetInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfBuffer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfBufferView.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfBufferViewTarget.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfCamera.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfCameraOrthographic.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfCameraPerspective.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfCameraType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfChildOfRootProperty.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfComponentType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfDrawMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfImage.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfInterpolationType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfMagnificationFilterMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfMaterial.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfMaterialCommonConstant.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfMesh.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfMeshPrimitive.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfMeshPrimitiveAttributes.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfMinFilterMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfNode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfNormalTextureInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfObject.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfOcclusionTextureInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfPbrMetallicRoughness.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfProperty.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfSampler.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfScene.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfSkin.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfTexture.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfTextureInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Schema\GltfWrapMode.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\ColliderType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\ConstructGltf.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\GltfAsset.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\GltfChunkType.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\GltfConversions.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\GltfUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\Importers\GlbAssetImporter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\Importers\GltfAssetImporter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Gltf\Serialization\Importers\GltfEditorImporter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\HoverLight.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\InspectorFields\InspectorField.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\InspectorFields\InspectorFieldData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\InspectorFields\InspectorGenericFields.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\InspectorFields\InspectorPropertySettings.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\BaseMixedRealityLineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\BezierDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\BezierInertia.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\EllipseLineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\ParabolaConstrainedLineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\ParabolaLineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\ParabolaPhysicalLineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\RectangleLineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\SimpleLineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\DataProviders\SplineDataProvider.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\LineFollower.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\LineUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\Renderers\BaseMixedRealityLineRenderer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\Renderers\MeshLineRenderer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\Renderers\MixedRealityLineRenderer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\Renderers\ParticleSystemLineRenderer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Lines\Renderers\StripMeshLineRenderer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\MathUtilities.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\MixedRealityPlayspace.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\MixedRealityServiceRegistry.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\BaseRayStabilizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\Distorters\Distorter.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\Distorters\DistorterBulge.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\Distorters\DistorterGravity.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\Distorters\DistorterSimplex.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\Distorters\DistorterSphere.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\Distorters\DistorterWiggly.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\GazeStabilizer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\MixedRealityRaycaster.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\RaycastResultComparer.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\TwoHandMoveLogic.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\TwoHandRotateLogic.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\TwoHandScaleLogic.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\Physics\VectorRollingStatistics.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\PlatformUtility.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\ProximityLight.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WebRequestRest\Response.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WebRequestRest\Rest.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsApiChecker.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\ActivePowerSchemeInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\AdapterInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\ApplicationInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\AvailableWiFiNetworks.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\BatteryInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\DeviceInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\DeviceOsInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\DevicePortalConnections.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\DHCPInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\FileInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\FileList.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\InstalledApps.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\InstallStatus.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\InterfaceInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\IpAddressInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\IpConfigInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\MachineName.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\NetworkInterfaces.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\NetworkProfileInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\PowerStateInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\ProcessInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\ProcessList.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DataStructures\WirelessNetworkInfo.cs" />
+    <Compile Include="Assets\MixedRealityToolkit\Utilities\WindowsDevicePortal\DevicePortal.cs" />
     <Compile Include="Assets\Scripts\Core\DataEntry.cs" />
     <Compile Include="Assets\Scripts\Core\DataEntryMap.cs" />
     <Compile Include="Assets\Scripts\Core\ListDictionary.cs" />
     <Compile Include="Assets\Scripts\Core\Logger.cs" />
-    <Compile Include="Assets\Scripts\Game\AppManager.cs" />
+    <Compile Include="Assets\Scripts\Core\LogType.cs" />
     <Compile Include="Assets\Scripts\Game\Fox.cs" />
     <Compile Include="Assets\Scripts\Game\GameControl.cs" />
     <Compile Include="Assets\Scripts\Game\GameMode.cs" />
@@ -1186,9 +1385,8 @@
     <Compile Include="Assets\Scripts\Game\ScrollingObject.cs" />
     <Compile Include="Assets\Scripts\Game\TargetBox.cs" />
     <Compile Include="Assets\Scripts\Game\TargetPool.cs" />
+    <Compile Include="Assets\Scripts\Game\WindowTimer.cs" />
     <Compile Include="Assets\Scripts\Networking\Client.cs" />
-    <Compile Include="Assets\Scripts\Networking\GameNetwork.cs" />
-    <Compile Include="Assets\Scripts\Networking\PhidgetData.cs" />
     <Compile Include="Assets\Scripts\Networking\SensorClient.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -1304,34 +1502,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Packages\com.unity.analytics\DataPrivacy\Unity.Analytics.DataPrivacy.asmdef" />
-    <None Include="Packages\com.unity.analytics\Tests\Editor\Unity.Analytics.StandardEvents\Unity.Analytics.StandardEvents.EditorTests.asmdef" />
-    <None Include="Packages\com.unity.analytics\Tests\Runtime\DataPrivacy\Unity.Analytics.DataPrivacy.Tests.asmdef" />
-    <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
-    <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />
-    <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryLight.uss" />
-    <None Include="Packages\com.unity.collab-proxy\Editor\Unity.CollabProxy.Editor.asmdef" />
-    <None Include="Packages\com.unity.collab-proxy\Tests\Editor\Unity.CollabProxy.EditorTests.asmdef" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Light.uss" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\Alert.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageAddFromUrlField.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageDetails.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageGroup.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageItem.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageList.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageManagerToolbar.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageManagerWindow.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageSearchToolbar.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageStatusBar.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Unity.PackageManagerUI.Editor.asmdef" />
-    <None Include="Packages\com.unity.package-manager-ui\Tests\Editor\Unity.PackageManagerUI.EditorTests.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Scripts\Editor\Unity.TextMeshPro.Editor.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Scripts\Runtime\Unity.TextMeshPro.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Tests\Editor\Unity.TextMeshPro.Editor.Tests.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Tests\Runtime\Unity.TextMeshPro.Tests.asmdef" />
-    <None Include="Packages\com.unity.xr.windowsmr.metro\Editor\Unity.XR.WindowsMR.Editor.asmdef" />
-    <None Include="Packages\com.unity.xr.windowsmr.metro\Runtime\Unity.XR.WindowsMR.asmdef" />
+    <None Include="Assets\link.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

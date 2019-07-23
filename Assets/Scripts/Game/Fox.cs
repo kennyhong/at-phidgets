@@ -111,6 +111,7 @@ public class Fox : MonoBehaviour
                 hasCollided = false;
                 jumpCooldownStatus = true;
                 GameControl.instance.LastSensorValue.text = "Last Sensor Value: " + sensorValue;
+                GameControl.instance.BlockLastSensorValue.text = "Last Sensor Value: " + sensorValue;
                 GameControl.instance.sensorValue = 0f;
             }
         } 

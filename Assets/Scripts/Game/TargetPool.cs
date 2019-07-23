@@ -13,8 +13,8 @@ public class TargetPool : MonoBehaviour
     private Vector3 objectPoolPosition = new Vector3(-15f, -1000f, 40f);
     private float timeSinceLastSpawned = 0;
     private float spawnXposition = 1f;
-    private float spawnYposition = -0.1f;
-    private float spawnZposition = 4f;
+    private float spawnYposition = -1.05f;
+    private float spawnZposition = 5f;
     private int currentBox = 0;
     private bool firstBox = true;
     // Start is called before the first frame update
@@ -54,6 +54,7 @@ public class TargetPool : MonoBehaviour
         {
             GameControl.instance.trialOver = true;
             GameControl.instance.trialCooldown = true;
+            ResetBoxes();
             GameControl.instance.totalTargets = 0;
             GameControl.instance.StopAllCoroutines();
             GameControl.instance.playDelayCount = 0;
@@ -62,9 +63,7 @@ public class TargetPool : MonoBehaviour
             GameControl.instance.PlaySignalAudio(GameControl.instance.TrialCompletedSound);
             GameControl.instance.stopwatch.Stop();
             GameControl.instance.stopwatch.Reset();
-            ResetBoxes();
         }
-
         if (GameControl.instance.trialOver == false && timeSinceLastSpawned >= spawnRate)
         {
 
@@ -79,6 +78,13 @@ public class TargetPool : MonoBehaviour
                     GameControl.instance.totalTargets++;
                     GameControl.instance.currTargetBegin = -1f;
                     GameControl.instance.currTargetEnd = -1f;
+                    DataEntry entry = new DataEntry(
+                    GameControl.instance.stopwatch.ElapsedMilliseconds,
+                    GameControl.instance.currTarget,
+                    GameControl.instance.sensorValue,
+                    LogType.MISSED_TARGET_DESPAWN);
+
+                    GameControl.instance.logger.addEntry(entry);
                 }
                 else
                 {
@@ -87,6 +93,13 @@ public class TargetPool : MonoBehaviour
                     targetBoxes[currentBox - 1].GetComponent<TargetBox>().scoreCounted = false;
                     GameControl.instance.currTargetBegin = -1f;
                     GameControl.instance.currTargetEnd = -1f;
+                    DataEntry entry = new DataEntry(
+                    GameControl.instance.stopwatch.ElapsedMilliseconds,
+                    GameControl.instance.currTarget,
+                    GameControl.instance.sensorValue,
+                    LogType.HIT_TARGET_DESPAWN);
+
+                    GameControl.instance.logger.addEntry(entry);
                 }
             }
             else if (currentBox == 0 && firstBox == false)
@@ -99,6 +112,13 @@ public class TargetPool : MonoBehaviour
                     GameControl.instance.totalTargets++;
                     GameControl.instance.currTargetBegin = -1f;
                     GameControl.instance.currTargetEnd = -1f;
+                    DataEntry entry = new DataEntry(
+                    GameControl.instance.stopwatch.ElapsedMilliseconds,
+                    GameControl.instance.currTarget,
+                    GameControl.instance.sensorValue,
+                    LogType.MISSED_TARGET_DESPAWN);
+
+                    GameControl.instance.logger.addEntry(entry);
                 }
                 else
                 {
@@ -107,8 +127,16 @@ public class TargetPool : MonoBehaviour
                     targetBoxes[boxPoolSize - 1].GetComponent<TargetBox>().scoreCounted = false;
                     GameControl.instance.currTargetBegin = -1f;
                     GameControl.instance.currTargetEnd = -1f;
+                    DataEntry entry = new DataEntry(
+                    GameControl.instance.stopwatch.ElapsedMilliseconds,
+                    GameControl.instance.currTarget,
+                    GameControl.instance.sensorValue,
+                    LogType.HIT_TARGET_DESPAWN);
+
+                    GameControl.instance.logger.addEntry(entry);
                 }
             }
+
             targetBoxes[currentBox].transform.position = new Vector3(spawnXposition, spawnYposition, spawnZposition);
             GameControl.instance.currTargetBegin = GameControl.instance.stopwatch.ElapsedMilliseconds;
             currentBox++;

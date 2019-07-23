@@ -16,7 +16,7 @@ public class TargetBox : MonoBehaviour
     private BoxCollider2D ground2;
     private Vector3 velocity;
     private Vector3 start;
-    private float boxDepthZ = 4f;
+    private float boxDepthZ = 5f;
     public GameObject edgeCollider;
     public bool targetHit = false;
     public bool scoreCounted = false;
@@ -24,9 +24,13 @@ public class TargetBox : MonoBehaviour
     private bool exitLowerThreshold = false;
     private bool lerp = false;
     float lerpTime = 0.02f;
-    float currentLerpTime;
+    float currentLerpTime = 0;
     float moveDistance = 10f;
     float foxValue = 0f;
+
+    float allowedDistanceFromPos = 1;
+    Vector3 targetPos;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -37,9 +41,9 @@ public class TargetBox : MonoBehaviour
         upperBackground = GameObject.Find("back").GetComponent<BoxCollider2D>();
         lowerBackground = GameObject.Find("back 2").GetComponent<BoxCollider2D>();
         threshold = GameObject.Find("threshold").GetComponent<BoxCollider2D>();
-        ground1 = GameObject.Find("foreground").GetComponent<BoxCollider2D>(); 
+        ground1 = GameObject.Find("foreground").GetComponent<BoxCollider2D>();
         ground2 = GameObject.Find("foreground 2").GetComponent<BoxCollider2D>();
-        
+
         Physics2D.IgnoreCollision(startLine, upperBackground);
         Physics2D.IgnoreCollision(startLine, lowerBackground);
         Physics2D.IgnoreCollision(startLine, threshold);
@@ -55,13 +59,14 @@ public class TargetBox : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-            foxValue = Fox.instance.sensorValue;
-            velocity = new Vector3(0, foxValue / 7840f, 4);
-            GameControl.instance.PlaySignalAudio(GameControl.instance.TargetHitSound);
-            start = rb2d.position;
-            lerp = true;
-            Fox.instance.hasCollided = true;
-            targetHit = true;
+        foxValue = Fox.instance.sensorValue;
+        velocity = new Vector3(0, foxValue / 7840f, boxDepthZ);
+        GameControl.instance.PlaySignalAudio(GameControl.instance.TargetHitSound);
+        start = rb2d.position;
+        targetPos = start + velocity;
+        lerp = true;
+        Fox.instance.hasCollided = true;
+        targetHit = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -94,7 +99,7 @@ public class TargetBox : MonoBehaviour
         );
             GameControl.instance.logger.addEntry(entry);
         }
-          else if (collision.gameObject.tag != "Player" && foxValue < 1962f && !scoreCounted)
+        else if (collision.gameObject.tag != "Player" && foxValue < 1962f && !scoreCounted)
         {
             GameControl.instance.PlayScoreAudio(GameControl.instance.UndershotSound);
             scoreCounted = true;
@@ -113,7 +118,7 @@ public class TargetBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(lerp)
+        if (lerp)
         {
             currentLerpTime += Time.fixedDeltaTime;
             if (currentLerpTime > lerpTime)
@@ -127,9 +132,9 @@ public class TargetBox : MonoBehaviour
             t = t * t * t * (t * (6f * t - 15f) + 10f);
             for (int i = 0; i < 100; i++)
             {
-                transform.position = Vector3.Lerp(start, start + velocity, t * i);
+                transform.position = Vector3.Lerp(start, targetPos, t * i);
             }
         }
-        
+
     }
 }
